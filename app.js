@@ -14,6 +14,7 @@ app.disable("x-powered-by");
 app.engine("handlebars", handlebars.engine);
 
 app.set("view engine", "handlebars");
+app.set("workJSON", workJSON.json);
 
 app.use(bodyParser.urlencoded({extended: true}));
 

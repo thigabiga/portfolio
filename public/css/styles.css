@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i|Playfair+Display:400,900');
 
 body {
-    background-color: floralwhite;
+    background-color: white;
 }
 
 
-
+/* nav styles */
 .navbar {
     background-color: white;
+    border-bottom: 1px solid #EFEFEF;
 }
 
 .navbar-brand {
     color: dimgrey;
     font-family: "Playfair Display", serif;
+    font-size: 30px;
     font-weight: 700;
 }
 
