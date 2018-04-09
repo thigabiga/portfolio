@@ -1,7 +1,18 @@
-<div class="row">
-    <h3>Title - Work</h3>
+<div class="row headerText">
+    <h3>Work</h3>
 </div>
 
 <div class="row" id="workArtworkGrid">
 
+    {{#each projectThumbnails}}
+        <div class="col-xs-12 col-sm-6 col-md-4 gridThumbnailCol">
+            <div class="view zoom">
+                <img class="gridThumbnail" src={{this.projectThumbnails}} />
+                <div class="mask flex-center">
+                    <p class="white-text">{{this.titleOnHover}}</p>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+    
 </div>

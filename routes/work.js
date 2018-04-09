@@ -1,22 +1,24 @@
 const router = require("express").Router();
 
+let projectJSON = require("../data/projects.json");
+
 router.get("/work", (req, res) => {
-    let workJSON = req.app.get("workJSON"),
-        workPhotos = [];
     
-    workJSON.projects.forEach((project) => {
-        workPhotos = workPhotos.concat(project.images[1]);
+    let projectInfo = [];
+    
+    projectJSON.projects.forEach(project => {
+        projectInfo.concat({
+            "thumbnail" : project["images"][0],
+            "title" : project["title"]
+        })
+        projectImages = projectImages.concat(project["images"][0]);
+        projectTitles = projectTitles.concat(project["title"]);
     });
-    
-        let workGrid = document.getElementById("workArtworkGrid").innerHTML;
-        
-        work
-        
-    
-    
     res.render("work", {
-        images: workPhotos
+        projectThumbnails: projectImages,
+        titleOnHover: projectTitles
     });
+
 });
 
 module.exports = router;

@@ -4,6 +4,48 @@ body {
     background-color: white;
 }
 
+/* header and text styles */
+h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+}
+
+h6 {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.headerText {
+    margin: 10px;
+}
+
+p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 12px;
+}
+
+/* grid image syles */
+.gridThumbnail {
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+}
+
+.gridThumbnailCol {
+    margin: 20px 10px;
+}
 
 /* nav styles */
 .navbar {

@@ -1,0 +1,63 @@
+{
+    "projects" : 
+    [{
+        "title" : "Placeholder",
+        "employer" : "DigitalCrafts",
+        "year" : 2018,
+        "type" : "Web Application",
+        "technologies" : [],
+        "description" : "Blah Blah Blah",
+        "add-credit" : ["Placeholder."],
+        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+    },
+    {
+        "title" : "Portfolio",
+        "employer" : "Erin Thigpen",
+        "year" : 2018,
+        "type" : "Portfolio Website",
+        "technologies" : ["HTML5", "Handlebars", "Node", "Express", "CSS", "JavaScript", "Bootstrap 4"],
+        "description" : "Blah Blah Blah",
+        "add-credit" : ["Placeholder."],
+        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+    },
+    {
+        "title" : "Hoot Hoot",
+        "employer" : "Rice University Study Abroad",
+        "year" : 2017,
+        "type" : "Illustration",
+        "technologies" : ["Adobe Illustrator"],
+        "description" : "Blah Blah Blah",
+        "add-credit" : ["Rice University Study Abroad Logos courtesy Rice University Study Abroad."],
+        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+    },
+    {
+        "title" : "A Television Experience",
+        "employer" : "ATX Television Festival",
+        "year" : 2016,
+        "type" : "Full-Page Advertisement",
+        "technologies" : ["Adobe Illustrator"],
+        "description" : "Blah Blah Blah",
+        "add-credit" : ["Photo and logo courtesy ATX Television Festival."],
+        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+    },
+    {
+        "title" : "TV Head",
+        "employer" : "ATX Television Festival",
+        "year" : 2015,
+        "type" : "Saddle-page Booklet",
+        "technologies" : ["Adobe InDesign", "Adobe Illustrator"],
+        "description" : "Blah Blah Blah",
+        "add-credit" : ["Photo and logo courtesy ATX Television Festival."],
+        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+    },
+    {
+        "title" : "TV Camp for Grown Ups",
+        "employer" : "ATX Television Festival",
+        "year" : 2018,
+        "type" : "Full-Page Advertisement",
+        "technologies" : ["Adobe Illustrator"],
+        "description" : "Blah Blah Blah",
+        "add-credit" : ["Photo and logo courtesy ATX Television Festival."],
+        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+    }]
+}
