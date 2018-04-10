@@ -18,13 +18,14 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
             titleId = concatTitleId(iNum);
         
         mouseTrap(thumbnail, thumbnailId);
+        mouseScurry(thumbnail, thumbnailId);
         
 //        thumbnail.addEventListener("mouseover", () => {
 //            overlayOn(thumbnailId);
 //        });
-        thumbnail.addEventListener("mouseout", () => {
-            overlayOff(thumbnailId);
-        });
+//        thumbnail.addEventListener("mouseout", () => {
+//            overlayOff(thumbnailId);
+//        });
         thumbnail.addEventListener("click", () => {
             // need to add click event to open full page
            console.log(document.getElementById(titleId).innerHTML); 
@@ -40,13 +41,14 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
             thumbnailId = concatImageId(jNum);
         
         mouseTrap(title, thumbnailId);
+        mouseScurry(title, thumbnailId);
         
 //        title.addEventListener("mouseover", () => {
 //            overlayOn(thumbnailId);
 //        });
-        title.addEventListener("mouseout", () => {
-            overlayOff(thumbnailId);
-        });
+//        title.addEventListener("mouseout", () => {
+//            overlayOff(thumbnailId);
+//        });
         title.addEventListener("click", () => {
             // need to add click event to open full page
            console.log(document.getElementById(titleId).innerHTML); 
@@ -77,10 +79,19 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
     };
     
     
+    ////////// LISTEN FOR MOUSEOVER AND MOUSEOFF EVENTS
     function mouseTrap (element, thumbnailId) {
         element.addEventListener("mouseover", () => {
             overlayOn(thumbnailId);
         });
     };
+    
+    function mouseScurry (element, thumbnailId) {
+        element.addEventListener("mouseout", () => {
+            overlayOff(thumbnailId);
+        });
+    };
+    
+    
     
 })();
