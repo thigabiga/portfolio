@@ -12,6 +12,7 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
 
     var i = 0;
     while (i < thumbnails.length) {
+        
         let thumbnail = thumbnails[i],
             thumbnailId = thumbnails[i].id,
             iNum = thumbnailId[thumbnailId.length - 1],
@@ -21,21 +22,12 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
         mouseScurry(thumbnail, thumbnailId);
         mouseClick(thumbnail, titleId);
         
-//        thumbnail.addEventListener("mouseover", () => {
-//            overlayOn(thumbnailId);
-//        });
-//        thumbnail.addEventListener("mouseout", () => {
-//            overlayOff(thumbnailId);
-//        });
-//        thumbnail.addEventListener("click", () => {
-            // need to add click event to open full page
-//           console.log(document.getElementById(titleId).innerHTML); 
-//        });
         i++;
     };
 
     var j = 0;
     while (j < titles.length) {
+        
         let title = titles[j],
             titleId = titles[j].id,
             jNum = titleId[titleId.length - 1],
@@ -45,16 +37,6 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
         mouseScurry(title, thumbnailId);
         mouseClick(title, titleId);
         
-//        title.addEventListener("mouseover", () => {
-//            overlayOn(thumbnailId);
-//        });
-//        title.addEventListener("mouseout", () => {
-//            overlayOff(thumbnailId);
-//        });
-//        title.addEventListener("click", () => {
-//            // need to add click event to open full page
-//           console.log(document.getElementById(titleId).innerHTML); 
-//        });
         j++;
     };
     
