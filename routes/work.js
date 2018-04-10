@@ -1,3 +1,5 @@
+// need to add alt text for thumbnail images
+
 const router = require("express").Router();
 
 let projectJSON = require("../data/projects.json");
@@ -7,16 +9,16 @@ router.get("/work", (req, res) => {
     let projectInfo = [];
     
     projectJSON.projects.forEach(project => {
-        projectInfo.concat({
-            "thumbnail" : project["images"][0],
-            "title" : project["title"]
-        })
-        projectImages = projectImages.concat(project["images"][0]);
-        projectTitles = projectTitles.concat(project["title"]);
+        projectInfo = projectInfo.concat({
+            title : project["title"],
+            image : project["images"][0]
+        });
     });
+    
+    console.log(projectInfo);
+    
     res.render("work", {
-        projectThumbnails: projectImages,
-        titleOnHover: projectTitles
+        gridInfo : projectInfo
     });
 
 });
