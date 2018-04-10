@@ -19,6 +19,7 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
         
         mouseTrap(thumbnail, thumbnailId);
         mouseScurry(thumbnail, thumbnailId);
+        mouseClick(thumbnail, titleId);
         
 //        thumbnail.addEventListener("mouseover", () => {
 //            overlayOn(thumbnailId);
@@ -26,10 +27,10 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
 //        thumbnail.addEventListener("mouseout", () => {
 //            overlayOff(thumbnailId);
 //        });
-        thumbnail.addEventListener("click", () => {
+//        thumbnail.addEventListener("click", () => {
             // need to add click event to open full page
-           console.log(document.getElementById(titleId).innerHTML); 
-        });
+//           console.log(document.getElementById(titleId).innerHTML); 
+//        });
         i++;
     };
 
@@ -42,6 +43,7 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
         
         mouseTrap(title, thumbnailId);
         mouseScurry(title, thumbnailId);
+        mouseClick(title, titleId);
         
 //        title.addEventListener("mouseover", () => {
 //            overlayOn(thumbnailId);
@@ -49,10 +51,10 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
 //        title.addEventListener("mouseout", () => {
 //            overlayOff(thumbnailId);
 //        });
-        title.addEventListener("click", () => {
-            // need to add click event to open full page
-           console.log(document.getElementById(titleId).innerHTML); 
-        });
+//        title.addEventListener("click", () => {
+//            // need to add click event to open full page
+//           console.log(document.getElementById(titleId).innerHTML); 
+//        });
         j++;
     };
     
@@ -67,17 +69,6 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
         return "thumbnail-" + num;
     };
     
-
-    ////////// TOGGLE THUMBNAIL IMAGE OPACITY
-    
-    function overlayOn (imageId) {
-        document.getElementById(imageId).style.opacity = "0.7";
-    };
-
-    function overlayOff (imageId) {
-        document.getElementById(imageId).style.opacity = "1";
-    };
-    
     
     ////////// LISTEN FOR MOUSEOVER AND MOUSEOFF EVENTS
     function mouseTrap (element, thumbnailId) {
@@ -90,6 +81,31 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
         element.addEventListener("mouseout", () => {
             overlayOff(thumbnailId);
         });
+    };
+    
+
+    ////////// TOGGLE THUMBNAIL IMAGE OPACITY
+    
+    function overlayOn (imageId) {
+        document.getElementById(imageId).style.opacity = "0.7";
+    };
+
+    function overlayOff (imageId) {
+        document.getElementById(imageId).style.opacity = "1";
+    };
+    
+    
+    ////////// LISTEN FOR MOUSEOVER AND CLICK EVENTS
+    function mouseClick (element, titleId) {
+        element.addEventListener("click", () => {
+            openProject(titleId);
+        });
+    };
+    
+    
+    ////////// TOGGLE PROJECT PAGES
+    function openProject (titleId) {
+        console.log(document.getElementById(titleId).innerHTML);
     };
     
     
