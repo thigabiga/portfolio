@@ -1,9 +1,13 @@
-// portfolio grid - toggle image opacity on text hover
+////////// PORTFOLIO GRID SCRIPTS
 
+
+////////// GET THUMBNAIL IMAGES AND PROJECT TITLES
 var thumbnails = document.getElementsByClassName("grid-thumbnail"),
     titles = document.getElementsByClassName("overlay-text");
 
+
 (function toggleGrid () {
+    
     "use strict";
 
     var i = 0;
@@ -12,9 +16,12 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
             thumbnailId = thumbnails[i].id,
             iNum = thumbnailId[thumbnailId.length - 1],
             titleId = concatTitleId(iNum);
-        thumbnail.addEventListener("mouseover", () => {
-            overlayOn(thumbnailId);
-        });
+        
+        mouseTrap(thumbnail, thumbnailId);
+        
+//        thumbnail.addEventListener("mouseover", () => {
+//            overlayOn(thumbnailId);
+//        });
         thumbnail.addEventListener("mouseout", () => {
             overlayOff(thumbnailId);
         });
@@ -31,9 +38,12 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
             titleId = titles[j].id,
             jNum = titleId[titleId.length - 1],
             thumbnailId = concatImageId(jNum);
-        title.addEventListener("mouseover", () => {
-            overlayOn(thumbnailId);
-        });
+        
+        mouseTrap(title, thumbnailId);
+        
+//        title.addEventListener("mouseover", () => {
+//            overlayOn(thumbnailId);
+//        });
         title.addEventListener("mouseout", () => {
             overlayOff(thumbnailId);
         });
@@ -43,6 +53,9 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
         });
         j++;
     };
+    
+    
+    ////////// CONCATENATE CORRESPONDING ELEMENT ID
 
     function concatTitleId (num) {
         return "overlay-" + num;
@@ -51,13 +64,23 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
     function concatImageId (num) {
         return "thumbnail-" + num;
     };
+    
 
+    ////////// TOGGLE THUMBNAIL IMAGE OPACITY
+    
     function overlayOn (imageId) {
         document.getElementById(imageId).style.opacity = "0.7";
     };
 
     function overlayOff (imageId) {
         document.getElementById(imageId).style.opacity = "1";
-    }; 
+    };
+    
+    
+    function mouseTrap (element, thumbnailId) {
+        element.addEventListener("mouseover", () => {
+            overlayOn(thumbnailId);
+        });
+    };
     
 })();

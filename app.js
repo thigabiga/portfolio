@@ -25,6 +25,7 @@ app.use(express.static(__dirname + "/public"));
 app.use(require("./routes/home"));
 app.use(require("./routes/about"));
 app.use(require("./routes/work"));
+app.use(require("./routes/project"));
 
 // attempted to refactor routes but didn't work
 // app.use("/", routes.home);

@@ -1,14 +1,24 @@
-<div class="row headerText">
-    <h3>{{title}}</h3>
+<div class="row">
+    <div class="col-12 hero">
+        <img class="hero-banner" src="http://via.placeholder.com/300x300" />
+    </div>
 </div>
 
-<div class="row" id="workArtworkGrid">
+<div class="row text-padding d-flex justify-content-between">
+    <div id="left-arrow">&lt;--</div>
+    <div id="right-arrow">--&gt;</div>
+</div>
 
-    {{#each gridInfo}}
-    <div class="col-xs-12 col-sm-6 col-md-4 grid-thumbnail-col">
-        <img class="grid-thumbnail" id="thumbnail-{{@index}}" src={{image}} />
-        <div class="overlay-text" id="overlay-{{@index}}">{{title}}</div>
-    </div>
-    {{/each}}
-    
+<div class="spacer"></div>
+<div class="row text-padding d-flex justify-content-center">
+    <h3>Title</h3>
+</div>
+<div class="spacer"></div>
+<div class="row text-padding">
+    <div class="col-fluid">
+        <p>Description of project. Lorem ipsum dolor amet subway tile disrupt humblebrag adaptogen. Stumptown yr photo booth, irony butcher tacos migas poke aesthetic venmo sriracha. Readymade hammock offal you probably haven't heard of them vegan migas tote bag blue bottle kogi etsy hell of brooklyn fashion axe. Sartorial humblebrag man braid, brunch shabby chic you probably haven't heard of them narwhal forage.
+        </p>
+        <div class="spacer"></div>
+        <h5 class="header-tagline">Employer :: ATX Television Festival</h5>
+        <h6 class="header-tagline">Front End :: CSS | HTML | OTHER</h6>
 </div>

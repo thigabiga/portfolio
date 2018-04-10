@@ -4,6 +4,11 @@ body {
     background-color: white;
 }
 
+.headshot {
+    border-radius: 50%;
+    height: 200px;
+}
+
 /* header and text styles */
 h1 {
     font-family: "Playfair Display", serif;
@@ -20,19 +25,38 @@ h3 {
     font-weight: 700;
 }
 
+h5 {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;  
+}
+
 h6 {
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.headerText {
+.text-padding {
     margin: 10px;
 }
 
 p {
     font-family: "PT Sans", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.tagline {
+    font-family: "PT Sans", serif;
+    font-size: 16px;
+    text-align: center;
+    line-height: 32px;
+    letter-spacing: 1px;
 }
 
 /* grid syles */
@@ -74,6 +98,29 @@ p {
   opacity: 1;
 }
 
+/* hero banner styles */
+
+.hero {
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .hero {
+        height: 400px;
+        object-fit: cover;
+        overflow: hidden;
+        width: 100%;
+    }   
+}
+
+.hero-banner {
+    width: 100%;
+    /* need to make js responsive if image height > width */
+}
+
 /* nav styles */
 .navbar {
     background-color: white;
@@ -94,4 +141,30 @@ p {
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
+}
+
+/* spacer */
+.spacer {
+    padding: 20px 0px;
+}
+
+/* arrows */
+#left-arrow, #right-arrow {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.header-tagline {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+footer {
+    font-family: "PT Sans", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 200px 10px 50px 10px;
 }
