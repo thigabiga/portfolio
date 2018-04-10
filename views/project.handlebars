@@ -1,24 +1,26 @@
+{{#each projects}}
 <div class="row">
     <div class="col-12 hero">
-        <img class="hero-banner" src="http://via.placeholder.com/300x300" />
+        <img class="hero-banner" src="{{images.[0]}}" />
     </div>
 </div>
 
-<div class="row text-padding d-flex justify-content-between">
+<!-- <div class="row text-padding d-flex justify-content-between">
     <div id="left-arrow">&lt;--</div>
     <div id="right-arrow">--&gt;</div>
-</div>
+</div> -->
 
 <div class="spacer"></div>
 <div class="row text-padding d-flex justify-content-center">
-    <h3>Title</h3>
+    <h3>{{title}}</h3>
 </div>
 <div class="spacer"></div>
 <div class="row text-padding">
     <div class="col-fluid">
-        <p>Description of project. Lorem ipsum dolor amet subway tile disrupt humblebrag adaptogen. Stumptown yr photo booth, irony butcher tacos migas poke aesthetic venmo sriracha. Readymade hammock offal you probably haven't heard of them vegan migas tote bag blue bottle kogi etsy hell of brooklyn fashion axe. Sartorial humblebrag man braid, brunch shabby chic you probably haven't heard of them narwhal forage.
-        </p>
+        <p>{{description}}</p>
         <div class="spacer"></div>
-        <h5 class="header-tagline">Employer :: ATX Television Festival</h5>
+        <h5 class="header-tagline">Employer :: {{employer}}</h5>
         <h6 class="header-tagline">Front End :: CSS | HTML | OTHER</h6>
+    </div>
 </div>
+{{/each}}

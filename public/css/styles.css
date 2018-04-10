@@ -101,16 +101,18 @@ p {
 /* hero banner styles */
 
 .hero {
-    height: 300px;
+    max-height: 300px;
     object-fit: cover;
+    object-position: 50% 50%;
     overflow: hidden;
     width: 100%;
 }
 
 @media (min-width: 992px) {
     .hero {
-        height: 400px;
+        max-height: 400px;
         object-fit: cover;
+        object-position: 50% 50%;
         overflow: hidden;
         width: 100%;
     }   

@@ -10,6 +10,7 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
     
     "use strict";
 
+    // loop through thumbnails
     var i = 0;
     while (i < thumbnails.length) {
         
@@ -25,6 +26,7 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
         i++;
     };
 
+    // loop through titles
     var j = 0;
     while (j < titles.length) {
         
@@ -42,7 +44,6 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
     
     
     ////////// CONCATENATE CORRESPONDING ELEMENT ID
-
     function concatTitleId (num) {
         return "overlay-" + num;
     };
@@ -67,7 +68,6 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
     
 
     ////////// TOGGLE THUMBNAIL IMAGE OPACITY
-    
     function overlayOn (imageId) {
         document.getElementById(imageId).style.opacity = "0.7";
     };
@@ -80,13 +80,18 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
     ////////// LISTEN FOR MOUSEOVER AND CLICK EVENTS
     function mouseClick (element, titleId) {
         element.addEventListener("click", () => {
-            openProject(titleId);
+            redirectMe(titleId);
+            // window.navigate
+            // window.location.href = "URL";
+            // URL would be the route
         });
     };
     
     
     ////////// TOGGLE PROJECT PAGES
-    function openProject (titleId) {
+    function redirectMe (titleId) {
+        let projName = document.getElementById(titleId).innerHTML;
+        window.location.href = "/project/:" + projName;
         console.log(document.getElementById(titleId).innerHTML);
     };
     
