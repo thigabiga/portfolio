@@ -12,15 +12,20 @@
 
 <div class="spacer"></div>
 <div class="row text-padding d-flex justify-content-center">
-    <h3>{{title}}</h3>
+    <div class="col-fluid limit-width">
+        <h3>{{title}}</h3>
+    </div>
 </div>
 <div class="spacer"></div>
-<div class="row text-padding">
-    <div class="col-fluid">
+<div class="row text-padding d-flex justify-content-center">
+    <div class="col-fluid limit-width">
         <p>{{description}}</p>
         <div class="spacer"></div>
-        <h5 class="header-tagline">Employer :: {{employer}}</h5>
-        <h6 class="header-tagline">Front End :: CSS | HTML | OTHER</h6>
+        <h5 class="header-tagline">Created For :: {{employer}}</h5>
+        <div class="spacer"></div>
+        <h6 class="header-tagline">Technologies</h6>
+        <!-- need to add IF statement to remove :: before and after list -->
+        <h5 class="header-tagline"> :: {{#each technologies}}{{this}} :: {{/each}}</h5>
     </div>
 </div>
 {{/with}}

@@ -23,6 +23,7 @@ h2 {
 h3 {
     font-family: "PT Serif", serif;
     font-weight: 700;
+    text-align: center;
 }
 
 h5 {
@@ -159,8 +160,8 @@ p {
 }
 
 .header-tagline {
-    padding-bottom: 20px;
     text-align: center;
+    line-height: 2em;
 }
 
 footer {
@@ -169,4 +170,12 @@ footer {
     letter-spacing: 2px;
     text-align: center;
     margin: 200px 10px 50px 10px;
+}
+
+.home-screen {
+    width: 100%;
+}
+
+.limit-width {
+    max-width: 991px;
 }
