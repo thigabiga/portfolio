@@ -1,0 +1,63 @@
+{
+    "projects" : 
+    [{
+        "title" : "Placeholder",
+        "employer" : "DigitalCrafts",
+        "year" : 2018,
+        "type" : "Web Application",
+        "technologies" : [],
+        "description" : "Lorem ipsum dolor amet retro bushwick hell of DIY, schlitz mustache whatever tumblr yr 8-bit. Locavore direct trade four dollar toast asymmetrical ugh aesthetic. Glossier blog tofu vice squid cornhole, chambray pickled jean shorts chartreuse tousled occupy succulents. Man braid PBR&B you probably haven't heard of them aesthetic tofu, pour-over mixtape single-origin coffee pitchfork. Copper mug dreamcatcher unicorn, 8-bit ramps migas meditation trust fund wayfarers waistcoat tbh shabby chic helvetica pok pok. Man braid food truck kitsch, taxidermy cred letterpress shabby chic pop-up locavore subway tile direct trade brunch tbh sustainable forage.",
+        "add-credit" : ["Placeholder."],
+        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+    },
+    {
+        "title" : "Portfolio",
+        "employer" : "Erin Thigpen",
+        "year" : 2018,
+        "type" : "Portfolio Website",
+        "technologies" : ["HTML5", "Handlebars", "Node", "Express", "CSS", "JavaScript", "Bootstrap 4"],
+        "description" : "Occupy vape taxidermy chartreuse locavore air plant. Tbh selfies taiyaki taxidermy sriracha small batch tattooed. Pop-up austin ethical kale chips, lo-fi messenger bag church-key poutine letterpress typewriter bitters ugh. Crucifix leggings hashtag keffiyeh snackwave.",
+        "add-credit" : ["Placeholder."],
+        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+    },
+    {
+        "title" : "Hoot Hoot",
+        "employer" : "Rice University Study Abroad",
+        "year" : 2017,
+        "type" : "Illustration",
+        "technologies" : ["Adobe Illustrator"],
+        "description" : "Small batch gochujang pour-over try-hard austin, artisan actually tattooed ennui. Mustache gastropub taiyaki, leggings intelligentsia jean shorts edison bulb blue bottle. Blue bottle try-hard pabst prism bitters neutra squid franzen chambray lo-fi kombucha la croix. Heirloom lumbersexual scenester wayfarers, church-key cloud bread pabst raw denim polaroid pinterest.",
+        "add-credit" : ["Rice University Study Abroad Logos courtesy Rice University Study Abroad."],
+        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+    },
+    {
+        "title" : "A Television Experience",
+        "employer" : "ATX Television Festival",
+        "year" : 2016,
+        "type" : "Full-Page Advertisement",
+        "technologies" : ["Adobe Illustrator"],
+        "description" : "Bushwick kitsch bitters succulents air plant ramps heirloom sartorial fanny pack selvage tbh. Migas sartorial VHS fashion axe, thundercats flexitarian dreamcatcher tousled fanny pack sriracha locavore wayfarers green juice biodiesel. Palo santo occupy vinyl pabst hot chicken kinfolk hoodie. Wolf jean shorts gochujang ethical post-ironic, seitan pug XOXO hot chicken normcore. Four loko cold-pressed photo booth hammock, swag lomo shabby chic plaid.",
+        "add-credit" : ["Photo and logo courtesy ATX Television Festival."],
+        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+    },
+    {
+        "title" : "TV Head",
+        "employer" : "ATX Television Festival",
+        "year" : 2015,
+        "type" : "Saddle-page Booklet",
+        "technologies" : ["Adobe InDesign", "Adobe Illustrator"],
+        "description" : "Listicle hot chicken scenester, art party actually bitters salvia meggings PBR&B. Tacos raclette echo park, drinking vinegar pinterest vexillologist salvia biodiesel fanny pack etsy hammock bespoke cardigan man bun. Typewriter pok pok bitters kitsch glossier stumptown. Literally vegan air plant, venmo woke master cleanse intelligentsia organic poutine normcore tofu health goth. Schlitz before they sold out brooklyn tote bag, chartreuse locavore vegan fashion axe deep v health goth. Trust fund gluten-free man bun photo booth yr woke stumptown migas glossier. Fanny pack hashtag mustache gastropub.",
+        "add-credit" : ["Photo and logo courtesy ATX Television Festival."],
+        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+    },
+    {
+        "title" : "TV Camp for Grown Ups",
+        "employer" : "ATX Television Festival",
+        "year" : 2018,
+        "type" : "Full-Page Advertisement",
+        "technologies" : ["Adobe Illustrator"],
+        "description" : "Occupy vape taxidermy chartreuse locavore air plant. Tbh selfies taiyaki taxidermy sriracha small batch tattooed. Pop-up austin ethical kale chips, lo-fi messenger bag church-key poutine letterpress typewriter bitters ugh. Crucifix leggings hashtag keffiyeh snackwave.",
+        "add-credit" : ["Photo and logo courtesy ATX Television Festival."],
+        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+    }]
+}

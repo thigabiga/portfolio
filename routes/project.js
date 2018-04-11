@@ -2,12 +2,19 @@ const router = require("express").Router();
 
 let projects = require("../data/projects.json")["projects"];
 
-router.get("/project:projectTitle", (req, res) => {
+router.get("/project/:whatever", (req, res) => {
     
-    var project = projects
+    let whateverTitle = req.params.whatever;
+    let theProject = null;
+    
+    projects.forEach((e) => {
+        if (e["title"] == whateverTitle) {
+            theProject = e;
+        };
+    });    
     
     res.render("project", {
-        projects : projects
+        myproject : theProject
     });
 });
 

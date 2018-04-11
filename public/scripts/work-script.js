@@ -91,8 +91,7 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
     ////////// TOGGLE PROJECT PAGES
     function redirectMe (titleId) {
         let projName = document.getElementById(titleId).innerHTML;
-        window.location.href = "/project/:" + projName;
-        console.log(document.getElementById(titleId).innerHTML);
+        window.location.href = "/project/" + projName;
     };
     
     
