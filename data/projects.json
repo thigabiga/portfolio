@@ -1,63 +1,64 @@
 {
     "projects" : 
     [{
-        "title" : "D8",
+        "title" : "d8",
         "employer" : "DigitalCrafts",
         "year" : 2018,
         "type" : ["Design", "Code"],
         "technologies" : ["CSS", "HTML", "Bootstrap", "JavaScript", "JQuery", "Adobe XD", "Git", "AJAX", "Zomato API", "TMDB API", "Google Maps API"],
-        "description" : "Created as part of the 2018 DigitalCrafts Immersive Coding Bootcamp. D8 is a web application that receives user input via a quiz. It outputs restaurant and movie suggestions in the user's area. I worked as a designer as part of a four-person team. I first prototyped the design using Adobe XD.",
+        "description" : "Created as part of the 2018 DigitalCrafts Immersive Coding Bootcamp. d8 is a web application that receives user input via a quiz. It outputs restaurant and movie suggestions in the user's area. I worked as a designer as part of a four-person team. I first prototyped the design using Adobe XD and then implemented the styles using HTML, CSS, and JavaScript.",
         "add-credit" : [],
-        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+        "images" : ["portfolio_snapshots-01.png", "portfolio_snapshots-02.png", "portfolio_snapshots-03.png", "portfolio_snapshots-04.png", "portfolio_snapshots-05.png"],
+        "github" : "https://github.com/thigabiga/D8"
     },
     {
         "title" : "Portfolio",
-        "employer" : "Erin Thigpen",
+        "employer" : "Self",
         "year" : 2018,
         "type" : ["Design", "Code"],
-        "technologies" : ["HTML5", "Handlebars", "Node", "Express", "CSS", "JavaScript", "Bootstrap 4"],
-        "description" : "Occupy vape taxidermy chartreuse locavore air plant. Tbh selfies taiyaki taxidermy sriracha small batch tattooed. Pop-up austin ethical kale chips, lo-fi messenger bag church-key poutine letterpress typewriter bitters ugh. Crucifix leggings hashtag keffiyeh snackwave.",
-        "add-credit" : ["Placeholder."],
-        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+        "technologies" : ["HTML", "Handlebars", "Node", "Express", "CSS", "JavaScript", "Bootstrap", "Git"],
+        "description" : "Portfolio web page built for personal use. I created it to showcase examples of my code and design work.",
+        "add-credit" : [],
+        "images" : [] 
     },
     {
         "title" : "Hoot Hoot",
         "employer" : "Rice University Study Abroad",
         "year" : 2017,
         "type" : ["Design"],
-        "technologies" : ["Adobe Illustrator"],
-        "description" : "Small batch gochujang pour-over try-hard austin, artisan actually tattooed ennui. Mustache gastropub taiyaki, leggings intelligentsia jean shorts edison bulb blue bottle. Blue bottle try-hard pabst prism bitters neutra squid franzen chambray lo-fi kombucha la croix. Heirloom lumbersexual scenester wayfarers, church-key cloud bread pabst raw denim polaroid pinterest.",
+        "technologies" : ["Illustrator"],
+        "description" : "Working with input from the Rice University Study Abroad team, I designed a logo for multi-purpose use. It has appeared on the department's handouts, fans, and t-shirts.",
         "add-credit" : ["Rice University Study Abroad Logos courtesy Rice University Study Abroad."],
-        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+        "images" : [] 
     },
     {
         "title" : "A Television Experience",
         "employer" : "ATX Television Festival",
         "year" : 2016,
         "type" : ["Design"],
-        "technologies" : ["Adobe Illustrator"],
-        "description" : "Bushwick kitsch bitters succulents air plant ramps heirloom sartorial fanny pack selvage tbh. Migas sartorial VHS fashion axe, thundercats flexitarian dreamcatcher tousled fanny pack sriracha locavore wayfarers green juice biodiesel. Palo santo occupy vinyl pabst hot chicken kinfolk hoodie. Wolf jean shorts gochujang ethical post-ironic, seitan pug XOXO hot chicken normcore. Four loko cold-pressed photo booth hammock, swag lomo shabby chic plaid.",
+        "technologies" : ["Illustrator, InDesign"],
+        "description" : "The ATX Television Festival's fifth season embraced the theme of \"A Television Experience\". With this as a starting point, I designed a series of materials for the festival. This included an advertisement that appeared in Entertainment Weekly.",
         "add-credit" : ["Photo and logo courtesy ATX Television Festival."],
-        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+        "images" : ["portfolio_snapshots-12.png", "portfolio_snapshots-11.png", "portfolio_snapshots-10.png"] 
     },
     {
-        "title" : "TV Obsessed",
+        "title" : "TV Fan",
         "employer" : "ATX Television Festival",
         "year" : 2015,
         "type" : ["Design"],
-        "technologies" : ["Adobe InDesign", "Adobe Illustrator"],
-        "description" : "Listicle hot chicken scenester, art party actually bitters salvia meggings PBR&B. Tacos raclette echo park, drinking vinegar pinterest vexillologist salvia biodiesel fanny pack etsy hammock bespoke cardigan man bun. Typewriter pok pok bitters kitsch glossier stumptown. Literally vegan air plant, venmo woke master cleanse intelligentsia organic poutine normcore tofu health goth. Schlitz before they sold out brooklyn tote bag, chartreuse locavore vegan fashion axe deep v health goth. Trust fund gluten-free man bun photo booth yr woke stumptown migas glossier. Fanny pack hashtag mustache gastropub.",
+        "technologies" : ["InDesign", "Illustrator"],
+        "description" : "A series of designs working around the festival's fourth season theme, \"As Close to Heaven as a Fan Can Get\". I designed the festival poster and program guide cover to after what I imagine would be a TV fan's favorite wall art.",
         "add-credit" : ["Photo and logo courtesy ATX Television Festival."],
-        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+        "images" : ["portfolio_snapshots-07.png", "portfolio_snapshots-08.png", "portfolio_snapshots-09.png"] 
     },
     {
         "title" : "TV Camp for Grown Ups",
         "employer" : "ATX Television Festival",
-        "year" : 2018,
+        "year" : 2017,
         "type" : ["Design"],
-        "technologies" : ["Adobe Illustrator", "Adobe InDesign"],
-        "description" : "Occupy vape taxidermy chartreuse locavore air plant. Tbh selfies taiyaki taxidermy sriracha small batch tattooed. Pop-up austin ethical kale chips, lo-fi messenger bag church-key poutine letterpress typewriter bitters ugh. Crucifix leggings hashtag keffiyeh snackwave.",
+        "technologies" : ["Illustrator", "InDesign"],
+        "description" : "Camp-inspired gear and designs modeled around the festival's new tagline, \"TV Camp for Grown Ups\". Includes a full-page advertisement featured in Austin Monthly and Entertainment Weekly.",
         "add-credit" : ["Photo and logo courtesy ATX Television Festival."],
-        "images" : ["http://via.placeholder.com/300x300", "http://via.placeholder.com/300x300"] 
+        "images" : ["portfolio_snapshots-06.png", "http://via.placeholder.com/300x300"] 
     }]
 }

@@ -6,7 +6,8 @@
 
     {{#each gridInfo}}
     <div class="col-xs-12 col-sm-6 col-md-4 grid-thumbnail-col">
-        <img class="grid-thumbnail" id="thumbnail-{{@index}}" src={{image}} />
+        <img class="grid-thumbnail" id="thumbnail-{{@index}}" src="../../images/{{image}}" />
+        <div class="overlay-color" id="grid-{{@index}}"></div>
         <div class="overlay-text" id="overlay-{{@index}}">{{title}}</div>
     </div>
     {{/each}}

@@ -3,24 +3,26 @@
 
 ////////// GET THUMBNAIL IMAGES AND PROJECT TITLES
 var thumbnails = document.getElementsByClassName("grid-thumbnail"),
-    titles = document.getElementsByClassName("overlay-text");
+    titles = document.getElementsByClassName("overlay-text"),
+    grids = document.getElementsByClassName("overlay-color");
 
 
 (function toggleGrid () {
     
     "use strict";
 
-    // loop through thumbnails
+    // loop through thumbnails - i don't think this is doing anything anymore
     var i = 0;
     while (i < thumbnails.length) {
         
         let thumbnail = thumbnails[i],
             thumbnailId = thumbnails[i].id,
             iNum = thumbnailId[thumbnailId.length - 1],
-            titleId = concatTitleId(iNum);
+            titleId = concatTitleId(iNum),
+            gridId = concatGridId(iNum);
         
-        mouseTrap(thumbnail, thumbnailId);
-        mouseScurry(thumbnail, thumbnailId);
+        mouseTrap(thumbnail, thumbnailId, gridId);
+        mouseScurry(thumbnail, thumbnailId, gridId);
         mouseClick(thumbnail, titleId);
         
         i++;
@@ -33,13 +35,31 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
         let title = titles[j],
             titleId = titles[j].id,
             jNum = titleId[titleId.length - 1],
-            thumbnailId = concatImageId(jNum);
+            thumbnailId = concatImageId(jNum),
+            gridId = concatGridId(jNum);
         
-        mouseTrap(title, thumbnailId);
-        mouseScurry(title, thumbnailId);
+        mouseTrap(title, thumbnailId, gridId);
+        mouseScurry(title, thumbnailId, gridId);
         mouseClick(title, titleId);
         
         j++;
+    };
+    
+    // loop through grid colors
+    var k = 0;
+    while (k < grids.length) {
+        
+        let grid = grids[k],
+            gridId = grids[k].id,
+            kNum = gridId[gridId.length - 1],
+            thumbnailId = concatImageId(kNum),
+            titleId = concatTitleId(kNum);
+        
+        mouseTrap(grid, thumbnailId, gridId);
+        mouseScurry(grid, thumbnailId, gridId);
+        mouseClick(grid, titleId);
+        
+        k++;
     };
     
     
@@ -52,28 +72,39 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
         return "thumbnail-" + num;
     };
     
+    function concatGridId (num) {
+        return "grid-" + num;
+    };
+    
     
     ////////// LISTEN FOR MOUSEOVER AND MOUSEOFF EVENTS
-    function mouseTrap (element, thumbnailId) {
+    function mouseTrap (element, thumbnailId, gridId) {
         element.addEventListener("mouseover", () => {
-            overlayOn(thumbnailId);
+            //overlayOn(thumbnailId);
+            overlayOn(gridId);
+            console.log(document.getElementById(gridId));
         });
     };
     
-    function mouseScurry (element, thumbnailId) {
+    function mouseScurry (element, thumbnailId, gridId) {
         element.addEventListener("mouseout", () => {
-            overlayOff(thumbnailId);
+            //overlayOff(thumbnailId);
+            overlayOff(gridId);
         });
     };
     
 
     ////////// TOGGLE THUMBNAIL IMAGE OPACITY
-    function overlayOn (imageId) {
-        document.getElementById(imageId).style.opacity = "0.7";
+    //function overlayOn (imageId) {
+        // document.getElementById(imageId).style.opacity = "0.7";
+    function overlayOn (gridId) {
+        document.getElementById(gridId).style.opacity = "1";
     };
 
-    function overlayOff (imageId) {
-        document.getElementById(imageId).style.opacity = "1";
+    //function overlayOff (imageId) {
+        //document.getElementById(imageId).style.opacity = "1";
+    function overlayOff (gridId) {
+        document.getElementById(gridId).style.opacity = "0";
     };
     
     

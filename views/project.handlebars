@@ -1,9 +1,12 @@
 {{#with myproject}}
+
+{{#if images.[0]}}
 <div class="row">
     <div class="col-12 hero">
-        <img class="hero-banner" src="{{images.[0]}}" />
+        <img class="hero-banner" src="../../images/{{images.[0]}}" />
     </div>
 </div>
+{{/if}}
 
 <!-- <div class="row text-padding d-flex justify-content-between">
     <div id="left-arrow">&lt;--</div>
@@ -21,11 +24,35 @@
     <div class="col-fluid limit-width">
         <p>{{description}}</p>
         <div class="spacer"></div>
-        <h5 class="header-tagline">Created For :: {{employer}}</h5>
+        <h5 class="header-tagline">Created For {{employer}}</h5>
         <div class="spacer"></div>
         <h6 class="header-tagline">Technologies</h6>
         <!-- need to add IF statement to remove :: before and after list -->
+        <!-- also need to add SORT helper function -->
         <h5 class="header-tagline"> :: {{#each technologies}}{{this}} :: {{/each}}</h5>
+        {{#if github}}
+        <div class="spacer"></div>
+        <div class="tagline"><a href="{{github}}">GitHub</a></div>
+        {{/if}}
     </div>
 </div>
+
+<div class="spacer"></div>
+
+<div class="row" id="workArtworkGrid">
+            
+    {{#each images}}
+    <div class="col-xs-12 col-sm-6 col-md-4 grid-thumbnail-col">
+        <img class="grid-thumbnail" id="thumbnail-{{@index}}" src="../../images/{{this}}" />
+    </div>
+    {{/each}}
+        
+</div>
+
 {{/with}}
+
+<div class="spacer"></div>
+
+<div class="row text-padding d-flex justify-content-center">
+    <div class="tagline"><a href="/work">Go Back</a></div>
+</div>
