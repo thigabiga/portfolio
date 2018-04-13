@@ -1,4 +1,4 @@
-var navLinks = document.getElementsByClassName("nav-link");
+var navLinks = document.getElementsByClassName("nav-hashtag");
 
 let i = 0;
 while (i < navLinks.length) {

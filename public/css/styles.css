@@ -48,6 +48,16 @@ h2, h2.about-me {
     }
 }
 
+.h2-padding {
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.top-image-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 h3 {
     font-family: "PT Serif", serif;
     font-weight: 400;
