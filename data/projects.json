@@ -5,21 +5,23 @@
         "employer" : "DigitalCrafts",
         "year" : 2018,
         "type" : ["Design", "Code"],
-        "technologies" : ["CSS", "HTML", "Bootstrap", "JavaScript", "JQuery", "Adobe XD", "Git", "AJAX", "Zomato API", "TMDB API", "Google Maps API"],
+        "technologies" : ["CSS", "HTML", "Bootstrap", "JavaScript", "jQuery", "Adobe XD", "Git", "AJAX", "Zomato API", "TMDB API", "Google Maps API"],
         "description" : "Created as part of the 2018 DigitalCrafts Immersive Coding Bootcamp. d8 is a web application that receives user input via a quiz. It outputs restaurant and movie suggestions in the user's area. I worked as a designer as part of a four-person team. I first prototyped the design using Adobe XD and then implemented the styles using HTML, CSS, and JavaScript.",
         "add-credit" : [],
         "images" : ["portfolio_snapshots-01.png", "portfolio_snapshots-02.png", "portfolio_snapshots-03.png", "portfolio_snapshots-04.png", "portfolio_snapshots-05.png"],
-        "github" : "https://github.com/thigabiga/D8"
+        "github" : "https://github.com/thigabiga/D8",
+        "video" : []
     },
     {
-        "title" : "Portfolio",
-        "employer" : "Self",
+        "title" : "Blackjack",
+        "employer" : "DigitalCrafts",
         "year" : 2018,
-        "type" : ["Design", "Code"],
-        "technologies" : ["HTML", "Handlebars", "Node", "Express", "CSS", "JavaScript", "Bootstrap", "Git"],
-        "description" : "Portfolio web page built for personal use. I created it to showcase examples of my code and design work.",
+        "type" : ["Code"],
+        "technologies" : ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+        "description" : "A simple game of cards.",
         "add-credit" : [],
-        "images" : [] 
+        "images" : ["portfolio_snapshots-14.png"],
+        "video" : ["blackjack-video.mov"]
     },
     {
         "title" : "Hoot Hoot",
