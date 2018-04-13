@@ -25,7 +25,7 @@ router.get("/", (req, res) => {
         });
     });
     
-    console.log(projectInfo);
+    //console.log(projectInfo);
     
     res.render("home", {
         gridInfo : projectInfo

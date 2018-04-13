@@ -82,7 +82,7 @@ var thumbnails = document.getElementsByClassName("grid-thumbnail"),
         element.addEventListener("mouseover", () => {
             //overlayOn(thumbnailId);
             overlayOn(gridId);
-            console.log(document.getElementById(gridId));
+            //console.log(document.getElementById(gridId));
         });
     };
     

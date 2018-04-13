@@ -23,7 +23,7 @@ router.get("/work", (req, res) => {
         });
     });
     
-    console.log(projectInfo);
+    //console.log(projectInfo);
     
     res.render("work", {
         gridInfo : projectInfo

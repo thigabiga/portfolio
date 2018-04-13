@@ -28,8 +28,8 @@ app.use((req, res, next) => {
 });
 
 app.use(require("./routes/home"));
-app.use(require("./routes/about"));
-app.use(require("./routes/work"));
+//app.use(require("./routes/about"));
+//app.use(require("./routes/work"));
 app.use(require("./routes/project"));
 
 app.use((req, res) => {
