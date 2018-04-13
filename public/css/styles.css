@@ -34,7 +34,7 @@ h1 {
     font-weight: 400;
 }
 
-h2 {
+h2, h2.about-me {
     color: #FD887B;
     font-family: "PT Serif", serif;
     font-weight: 400;
@@ -43,11 +43,8 @@ h2 {
 }
 
 @media (min-width: 992px) {
-    h2 {
-        color: #FD887B;
-        font-family: "PT Serif", serif;
-        font-weight: 400;
-        text-align: left;
+    h2.about-me {
+        padding-bottom: 40px;
     }
 }
 
