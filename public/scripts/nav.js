@@ -7,4 +7,4 @@ while (i < navLinks.length) {
     i++;
 };
 
-console.log(navLinks);
+//console.log(navLinks);

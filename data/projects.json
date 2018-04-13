@@ -4,7 +4,7 @@
         "title" : "d8",
         "employer" : "DigitalCrafts",
         "year" : 2018,
-        "type" : ["Design", "Code"],
+        "type" : ["Code"],
         "technologies" : ["CSS", "HTML", "Bootstrap", "JavaScript", "jQuery", "Adobe XD", "Git", "AJAX", "Zomato API", "TMDB API", "Google Maps API"],
         "description" : "Created as part of the 2018 DigitalCrafts Immersive Coding Bootcamp. d8 is a web application that receives user input via a quiz. It outputs restaurant and movie suggestions in the user's area. I worked as a designer as part of a four-person team. I first prototyped the design using Adobe XD and then implemented the styles using HTML, CSS, and JavaScript.",
         "add-credit" : [],
@@ -18,9 +18,10 @@
         "year" : 2018,
         "type" : ["Code"],
         "technologies" : ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
-        "description" : "A simple game of cards.",
+        "description" : "A simple game of cards. Blackjack card game built with jQuery, Bootstrap, JavaScript, HTML, and CSS.",
         "add-credit" : [],
         "images" : ["portfolio_snapshots-14.png"],
+        "github" : "https://github.com/thigabiga/blackjack",
         "video" : ["blackjack-video.mov"]
     },
     {

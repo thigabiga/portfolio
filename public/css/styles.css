@@ -53,9 +53,18 @@ h2, h2.about-me {
     padding-bottom: 80px;
 }
 
+.h3-padding {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
 .top-image-padding {
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+.top-video-padding {
+    padding-top: 80px;
 }
 
 h3 {
@@ -183,6 +192,12 @@ a:link, a:visited {
 .hero-banner {
     width: 100%;
     /* need to make js responsive if image height > width */
+}
+
+.hero-video {
+    max-height: 300px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 

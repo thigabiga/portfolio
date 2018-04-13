@@ -23,7 +23,7 @@ app.set("port", process.env.PORT || 3000);
 app.use(express.static(__dirname + "/public"));
 
 app.use((req, res, next) => {
-    console.log("looking for url" + req.url);
+    //console.log("looking for url" + req.url);
     next();
 });
 
