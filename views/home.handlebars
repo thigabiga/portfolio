@@ -3,52 +3,57 @@
     <a href="#about"><img class="down-arrow" src="../../images/arrow.svg" /></a>
 </div>
 
-
-<div class="spacer d-none d-lg-block d-xl-block"></div>
-
 <div class="row text-padding d-flex justify-content-center top-image-padding" name="about">
-    <!-- <div class="col-12 d-lg-none d-xl-none">
-        <div class="d-flex justify-content-center"> -->
-            <div class="headshot-mask">
-                <img class="headshot img-fluid" src="../../images/headshot.jpg" />
-            </div>
-        </div>
-    <!--</div>-->
+    <div class="headshot-mask">
+        <img class="headshot img-fluid" src="../../images/headshot.jpg" />
+    </div>
+</div>
 
-    <!--<div class="col-12 more-space-on-mobile">
-        <div class="headshot-mask d-none d-lg-block d-xl-block to-the-left">
-            <img class="headshot img-fluid" src="../../images/headshot.jpg" align="left"/>
-        </div>
-        <div class="text-float-right limit-width">-->
-
-<div class="row text-padding d-flex justify-content-center" name="about">
+<div class="row text-padding d-flex justify-content-center">
     <div class="col-12 d-flex justify-content-center limit-width">
-        <h2 class="about-me">My name is Erin Thigpen.</h2></div>
+        <h2 class="about-me">My name is Erin Thigpen.</h2>
+    </div>
     <div class="col-12 limit-width">
-            <p>I am a Full-Stack Software Developer and Graphic Designer living in Houston, Texas.</p>
-            
-            <p>I graduated from The College of William & Mary in Virginia with a B.A. in Economics. Since then, I have worked for the ATX Television Festival, Contemporary Arts Museum Houston, and Austin Film Society. After several years in the non-profit field, I decided to pursue a career in Web Development. I enjoy merging my creative background and penchant for solving logic problems as a developer.
-                
-            <p>In my spare time, I enjoy making short films, reading Jane Austen novels, doing crosswords in pen, and building tiny model houses.</p></div>
-        </div>
-    <!-- </div>
-</div> -->
+        <p>I am a Full-Stack Software Developer and Graphic Designer living in Houston, Texas.</p>
+        <p>I graduated from The College of William & Mary in Virginia with a B.A. in Economics. Since then, I have worked for the ATX Television Festival, Contemporary Arts Museum Houston, and Austin Film Society. After several years in the non-profit field, I decided to pursue a career in Web Development. I enjoy merging my creative background and penchant for solving logic problems as a developer.
+        <p>In my spare time, I enjoy making short films, reading Jane Austen novels, doing crosswords in pen, and building tiny model houses.</p>
+    </div>
+</div>
 
-<div class="row text-padding limit-width d-flex h2-padding" name="work" style="margin: 0px auto;">
-    <div class="col-12 d-flex justify-content-center">
-    <h2>Here's My Work.</h2>
-</div></div>
+<div class="row text-padding d-flex h2-padding justify-content-center" name="work">
+    <div class="col-12 d-flex limit-width justify-content-center">
+        <h2>Here's my code.</h2>
+    </div>
+</div>
 
-<div class="row" id="workArtworkGrid">    
-
+<div class="row" id="workArtworkGrid">
     {{#each gridInfo}}
+    {{#if codeId}}
     <div class="col-xs-12 col-sm-6 col-md-4 grid-thumbnail-col">
-        <img class="grid-thumbnail" id="thumbnail-{{@index}}" src="../../images/{{image}}" />
+        <img class="grid-thumbnail" id="thumbnail-{{@index}}" src="../../images/{{image}}" alt="{{alt}}" />
         <div class="overlay-color" id="grid-{{@index}}"></div>
         <div class="overlay-text" id="overlay-{{@index}}">{{title}}</div>
     </div>
+    {{/if}}
     {{/each}}
-    
+</div>
+
+<div class="row text-padding d-flex h2-padding justify-content-center" name="design">
+    <div class="col-12 d-flex limit-width justify-content-center">
+        <h2>Here's my design gallery.</h2>
+    </div>
+</div>
+
+<div class="row" id="designArtworkGrid">
+    {{#each gridInfo}}
+    {{#if designId}}
+    <div class="col-xs-12 col-sm-6 col-md-4 grid-thumbnail-col">
+        <img class="grid-thumbnail" id="thumbnail-{{@index}}" src="../../images/{{image}}" alt="{{alt}}" />
+        <div class="overlay-color" id="grid-{{@index}}"></div>
+        <div class="overlay-text" id="overlay-{{@index}}">{{title}}</div>
+    </div>
+    {{/if}}
+    {{/each}}
 </div>
 
 <div class="row-fluid text-padding limit-width d-flex h2-padding" name="contact" style="margin: 0px auto;">

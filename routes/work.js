@@ -4,12 +4,20 @@ const router = require("express").Router();
 
 let projectJSON = require("../data/projects.json");
 
+`
 router.get("/work", (req, res) => {
     
-    let projectInfo = [];
-    let projectImage = "";
+    // let projectInfo = [];
+    // let projectImage = "";
+    
+    let codeInfo = [],
+        codeImage = "",
+        designInfo = [],
+        designImage = "";
     
     projectJSON.projects.forEach(project => {
+        
+        if 
         
         if (project["images"].length === 0) {
             projectImage = "portfolio_snapshots-13.png";
@@ -32,3 +40,4 @@ router.get("/work", (req, res) => {
 });
 
 module.exports = router;
+`

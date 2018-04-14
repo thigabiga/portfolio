@@ -44,7 +44,7 @@ app.use((req, res) => {
 // app.use("/code", routes.work);
 
 app.listen(app.get("port"), () => {
-    console.log("yas!");
+    // console.log("yas!");
 });
 
 module.exports = app;

@@ -45,6 +45,17 @@
         "video" : ["blackjack-video.mov"]
     },
     {
+        "title" : "Hoot Hoot",
+        "employer" : "Rice University Study Abroad",
+        "year" : 2017,
+        "design-id" : 1,
+        "technologies" : ["Illustrator"],
+        "description" : "Working with input from the Rice University Study Abroad team, I designed a logo for multi-purpose use. It has appeared on the department's handouts, fans, and t-shirts.",
+        "add-credit" : ["Rice University Study Abroad Logos courtesy Rice University Study Abroad."],
+        "images" : [],
+        "images-alt" : [{}]
+    },
+    {
         "title" : "A Television Experience",
         "employer" : "ATX Television Festival",
         "year" : 2016,
@@ -82,6 +93,20 @@
             },
             {
                 "image" : "portfolio_snapshots-09.png", "alt" : "atx television festival drink menu back"
+            }]
+    },
+    {
+        "title" : "TV Camp for Grown Ups",
+        "employer" : "ATX Television Festival",
+        "year" : 2017,
+        "design-id" : 4,
+        "technologies" : ["Illustrator", "InDesign"],
+        "description" : "Camp-inspired gear and designs modeled around the festival's new tagline, \"TV Camp for Grown Ups\". Includes a full-page advertisement featured in Austin Monthly and Entertainment Weekly.",
+        "add-credit" : ["Photo and logo courtesy ATX Television Festival."],
+        "images" : ["portfolio_snapshots-06.png"],
+        "images-alt" : 
+            [{
+                "image" : "portfolio_snapshots-06.png", "alt" : "atx television festival poster"
             }]
     }]
 }
