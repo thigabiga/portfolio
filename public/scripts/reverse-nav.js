@@ -1,3 +1,5 @@
+// reverses nav bar changes when leaving projects page
+
 (function reverseNavLinks () {
     var navLinks = document.getElementsByClassName("nav-hashtag");
     navLinks[0].href = "#about";

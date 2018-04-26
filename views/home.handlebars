@@ -1,79 +1,66 @@
+<!-- HERO BANNER -->
 <div class="row hero-solid-color" name="home">
     <h1 class="white-center">Hi, there.</h1>
     <a href="#about"><img class="down-arrow" src="../../images/arrow.svg" /></a>
 </div>
 
+<!-- HEADSHOT -->
 <div class="row text-padding d-flex justify-content-center top-image-padding" name="about">
     <div class="headshot-mask">
         <img class="headshot img-fluid" src="../../images/headshot.jpg" />
     </div>
 </div>
 
+<!-- ABOUT ME -->
 <div class="row text-padding d-flex justify-content-center">
     <div class="col-12 d-flex justify-content-center limit-width">
         <h2 class="about-me">My name is Erin Thigpen.</h2>
     </div>
     <div class="col-12 limit-width">
-        <p>I am a Full-Stack Software Developer and Graphic Designer living in Houston, Texas.</p>
+        <p>I am a Full-Stack Software Developer living in Houston, Texas.</p>
         <p>I graduated from The College of William & Mary in Virginia with a B.A. in Economics. Since then, I have worked for the ATX Television Festival, Contemporary Arts Museum Houston, and Austin Film Society. After several years in the non-profit field, I decided to pursue a career in Web Development. I enjoy merging my creative background and penchant for solving logic problems as a developer.
         <p>In my spare time, I enjoy making short films, reading Jane Austen novels, doing crosswords in pen, and building tiny model houses.</p>
     </div>
 </div>
 
-<!-- fixing tiny houses -->
-<!-- <div class="row d-flex text-padding justify-content-center" style="height: 300px;">
-    <div class="col-12 limit-width">
-        <div class="headshot-mask" style="height: 200px; width: 200px; float: right; box-shadow: 5px 5px #FD887B; box-shadow: 5px 5px #FD887B;">
-            <img class="headshot img-fluid" src="../../images/tiny-house-1.png" />
-        </div>
-        <div class="headshot-mask" style="height: 150px; width: 150px; margin-top: 130px; float: right; box-shadow: 5px 5px #FD887B;">
-            <img class="headshot img-fluid" src="../../images/tiny-house-2.png" />
-        </div>
-    </div>
-</div> -->
-
+<!-- CODE PROJECTS -->
 <div class="row text-padding d-flex h2-padding justify-content-center" name="work">
     <div class="col-12 d-flex limit-width justify-content-center">
         <h2>Here's my code.</h2>
     </div>
 </div>
-
 <div class="row" id="workArtworkGrid">
-    {{#each gridInfo}}
-    {{#if codeId}}
-    <div class="col-xs-12 col-sm-6 col-md-4 grid-thumbnail-col">
-        <img class="grid-thumbnail" id="thumbnail-{{@index}}" src="../../images/{{image}}" alt="{{alt}}" />
-        <div class="overlay-color" id="grid-{{@index}}"></div>
-        <div class="overlay-text" id="overlay-{{@index}}">{{title}}</div>
-    </div>
-    {{/if}}
+    {{#each codeInfo}}
+        <div class="col-xs-12 col-sm-6 col-md-4 grid-thumbnail-col">
+            <img class="grid-thumbnail" src="../../images/{{image}}" alt="{{alt}}" />
+            <div class="overlay-color" data-id="{{id}}" id="overlay-{{id}}"></div>
+            <div class="overlay-text" data-id="{{id}}" id="text-{{id}}">{{title}}</div>
+        </div>
     {{/each}}
 </div>
 
+<!-- DESIGN PROJECTS -->
 <div class="row text-padding d-flex h2-padding justify-content-center" name="design">
     <div class="col-12 d-flex limit-width justify-content-center">
         <h2>Here's my design gallery.</h2>
     </div>
 </div>
-
 <div class="row" id="designArtworkGrid">
-    {{#each gridInfo}}
-    {{#if designId}}
+    {{#each designInfo}}
     <div class="col-xs-12 col-sm-6 col-md-4 grid-thumbnail-col">
-        <img class="grid-thumbnail" id="thumbnail-{{@index}}" src="../../images/{{image}}" alt="{{alt}}" />
-        <div class="overlay-color" id="grid-{{@index}}"></div>
-        <div class="overlay-text" id="overlay-{{@index}}">{{title}}</div>
+        <img class="grid-thumbnail" src="../../images/{{image}}" alt="{{alt}}" />
+        <div class="overlay-color" data-id="{{id}}" id="overlay-{{id}}"></div>
+        <div class="overlay-text" data-id="{{id}}" id="text-{{id}}">{{title}}</div>
     </div>
-    {{/if}}
     {{/each}}
 </div>
 
+<!-- CONTACT SECTION -->
 <div class="row-fluid text-padding limit-width d-flex h2-padding" name="contact" style="margin: 0px auto;">
     <div class="col-12 d-flex justify-content-center">
         <h2>Contact me.</h2>
     </div>
 </div>
-
 <div class="row">
     <div class="col">
         <div class="tagline">Email :: <a href="mailto:thigabiga@gmail.com">thigpen.erin@gmail.com</a></div>
@@ -82,10 +69,12 @@
     </div>
 </div>
 
+<!-- SCROLL UP -->
 <div class="row text-padding d-flex justify-content-center h2-padding">
     <div class="tagline"><a href="#home">Back to Top</a></div>
 </div>
 
-<script type="text/javascript" src="../../scripts/work-script.js" async></script>
+<!-- SCRIPTS -->
+<script type="text/javascript" src="../../scripts/work-nav.js" async></script>
 <script type="text/javascript" src="../../scripts/scrolling.js" async></script>
 <script type="text/javascript" src="../../scripts/reverse-nav.js" async></script>

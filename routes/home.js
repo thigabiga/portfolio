@@ -1,65 +1,52 @@
-const router = require("express").Router();
-
-// let projectJSON = require("../data/projects.json");
-
-let projectJSON = require("../data/projects.json");
+const router = require("express").Router(),
+      projectJSON = require("../data/projects.json");
 
 router.get("/", (req, res) => {
     
-    // let projectInfo = [];
-    // let projectImage = "";
-    
-    let projectInfo = [],
-        projectImage = "",
+    let design = [],
+        code = [],
+        thumbnail = "",
         altText = "";
     
     projectJSON.projects.forEach(project => {
         
-        if (project["images"].length === 0) {
-            projectImage = "portfolio_snapshots-13.png";
-            altText = "placeholder"
-        } else {
-            projectImage = project["images-alt"][0]["image"];
-            altText = project["images-alt"][0]["alt"];
-        };
-        
-        if (project["design-id"]) {
-            projectInfo = projectInfo.concat({
-                designId : project["design-id"],
-                title : project["title"],
-                image : projectImage,
-                alt : altText
-            });       
-        } else {
-            projectInfo = projectInfo.concat({
-                codeId : project["code-id"],
-                title : project["title"],
-                image : projectImage,
-                alt : altText
-            });
-        };
-        
-        // if (project["images"].length === 0) {
-        //     projectImage = "portfolio_snapshots-13.png";
-        // } else {
-        //     projectImage = project["images"][0];
-        // }
-        
-        // projectInfo = projectInfo.concat({
-        //     title : project["title"],
-        //     image : projectImage
-    });
-//});
+        if (project["display"] === true) {
+            
+            // ADDS PLACEHOLDER IMAGE IF THERE ARE NOT ANY
+            if (project["images"].length === 0) {
+                thumbnail = "portfolio_snapshots-13.png";
+                altText = "placeholder"
+            } else {
+                thumbnail = project["images-alt"][0]["image"];
+                altText = project["images-alt"][0]["alt"];
+            };
 
-    //console.log(designInfo);
-    //console.log(codeInfo);
-    // console.log(projectInfo);
+            // SEPARATE DESIGN AND CODE PROJECTS
+            if (project["type"] === "design") {
+                design = design.concat({
+                    id : project["id"],
+                    title : project["title"],
+                    image : thumbnail,
+                    alt : altText
+                });       
+            } else {
+                code = code.concat({
+                    id : project["id"],
+                    title : project["title"],
+                    image : thumbnail,
+                    alt : altText
+                });
+            };
+            
+        };
+        
+    });
     
     res.render("home", {
-        gridInfo : projectInfo
-        // codeGridInfo : codeInfo,
-        // designGridInfo : designInfo
+        codeInfo : code,
+        designInfo : design
     });
+    
 });
 
 module.exports = router;

@@ -1,66 +1,56 @@
 {{#with myproject}}
 
-<!-- need to fix header images to fit
-{{#if images.[0]}}
-<div class="row">
-    <div class="col-12 hero">
-        <img class="hero-banner" src="../../images/{{images.[0]}}" />
+    {{#if video.[0]}}
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center top-video-padding">
+                <video class="hero-video" poster="../../images/{{images.[0]}}" src="../../images/{{video.[0]}}" type="video/webm" controls autoplay preload />
+                </video>
+            </div>
+        </div>
+
+    {{else}}
+        <!-- need to fix header images to fit -->
+        <div class="row">
+            <div class="col-12 hero">
+                <img class="hero-banner" src="../../images/{{images.[0]}}" />
+            </div>
+        </div>
+
+    {{/if}}
+
+    <div class="row text-padding d-flex justify-content-center h3-padding">
+        <div class="col-fluid limit-width">
+            <h3>{{title}}</h3>
+        </div>
     </div>
-</div>
-{{/if}}
--->
-
-
-{{#if video.[0]}}
-<div class="row">
-    <div class="col-12 d-flex justify-content-center top-video-padding">
-        <video class="hero-video" poster="../../images/{{images.[0]}}" src="../../images/{{video.[0]}}" type="video/webm" controls autoplay preload />
-        </video>
+    <div class="row text-padding d-flex justify-content-center">
+        <div class="col-fluid limit-width">
+            <p>{{description}}</p>
+            <div class="spacer"></div>
+            <h5 class="header-tagline">Created For {{employer}}</h5>
+            <div class="spacer"></div>
+            <h6 class="header-tagline">Built With</h6>
+            <!-- need to add IF statement to remove :: before and after list -->
+            <!-- also need to add SORT helper function -->
+            <h5 class="header-tagline"> :: {{#each technologies}}{{this}} :: {{/each}}</h5>
+            {{#if github}}
+            <div class="spacer"></div>
+            <div class="tagline"><a href="{{github}}" target="_blank">GitHub</a></div>
+            {{/if}}
+        </div>
     </div>
-</div>
-{{/if}}
 
+    <div class="spacer"></div>
 
+    <div class="row" id="workArtworkGrid">
 
-<!-- <div class="row text-padding d-flex justify-content-between">
-    <div id="left-arrow">&lt;--</div>
-    <div id="right-arrow">--&gt;</div>
-</div> -->
+        {{#each images}}
+        <div class="col-xs-12 col-sm-6 col-md-4 grid-thumbnail-col">
+            <img class="grid-thumbnail" id="thumbnail-{{@index}}" src="../../images/{{this}}" />
+        </div>
+        {{/each}}
 
-<div class="row text-padding d-flex justify-content-center h3-padding">
-    <div class="col-fluid limit-width">
-        <h3>{{title}}</h3>
     </div>
-</div>
-
-<div class="row text-padding d-flex justify-content-center">
-    <div class="col-fluid limit-width">
-        <p>{{description}}</p>
-        <div class="spacer"></div>
-        <h5 class="header-tagline">Created For {{employer}}</h5>
-        <div class="spacer"></div>
-        <h6 class="header-tagline">Built With</h6>
-        <!-- need to add IF statement to remove :: before and after list -->
-        <!-- also need to add SORT helper function -->
-        <h5 class="header-tagline"> :: {{#each technologies}}{{this}} :: {{/each}}</h5>
-        {{#if github}}
-        <div class="spacer"></div>
-        <div class="tagline"><a href="{{github}}" target="_blank">GitHub</a></div>
-        {{/if}}
-    </div>
-</div>
-
-<div class="spacer"></div>
-
-<div class="row" id="workArtworkGrid">
-            
-    {{#each images}}
-    <div class="col-xs-12 col-sm-6 col-md-4 grid-thumbnail-col">
-        <img class="grid-thumbnail" id="thumbnail-{{@index}}" src="../../images/{{this}}" />
-    </div>
-    {{/each}}
-        
-</div>
 
 {{/with}}
 

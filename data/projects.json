@@ -1,10 +1,25 @@
 {
     "projects" : 
     [{
+        "title" : "Bidder",
+        "employer" : "DigitalCrafts",
+        "year" : 2018,
+        "type" : "code",
+        "id" : 0,
+        "technologies" : "",
+        "description" : "",
+        "images" : [],
+        "images-alt" : [],
+        "github" : "https://github.com/thigabiga/Bidder-App",
+        "video" : ["bidderAppWalkthrough.mov"],
+        "display" : true
+    },
+    {
         "title" : "d8",
         "employer" : "DigitalCrafts",
         "year" : 2018,
-        "code-id" : 1,
+        "type" : "code",
+        "id" : 1,
         "technologies" : ["CSS", "HTML", "Bootstrap", "JavaScript", "jQuery", "Adobe XD", "Git", "AJAX", "Zomato API", "TMDB API", "Google Maps API"],
         "description" : "Created as part of the 2018 DigitalCrafts Immersive Coding Bootcamp. d8 is a web application that receives user input via a quiz. It outputs restaurant and movie suggestions in the user's area. I worked as a designer as part of a four-person team. I first prototyped the design using Adobe XD and then implemented the styles using HTML, CSS, and JavaScript.",
         "add-credit" : [],
@@ -26,13 +41,15 @@
                 "image" : "portfolio_snapshots-05.png", "alt" : "d8 web application itinerary page"
             }],
         "github" : "https://github.com/thigabiga/D8",
-        "video" : ["d8-video.mp4"]
+        "video" : ["d8-video.mp4"],
+        "display" : true
     },
     {
         "title" : "Blackjack",
         "employer" : "DigitalCrafts",
         "year" : 2018,
-        "code-id" : 2,
+        "type" : "code",
+        "id" : 2,
         "technologies" : ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
         "description" : "A simple Blackjack card game built with jQuery, Bootstrap, JavaScript, HTML, and CSS.",
         "add-credit" : [],
@@ -42,13 +59,15 @@
                 "image" : "portfolio_snapshots-14.png", "alt" : "blackjack game"
             }],
         "github" : "https://github.com/thigabiga/blackjack",
-        "video" : ["blackjack-video.mov"]
+        "video" : ["blackjack-video.mov"],
+        "display" : true
     },
     {
         "title" : "A Television Experience",
         "employer" : "ATX Television Festival",
         "year" : 2016,
-        "design-id" : 2,
+        "type" : "design",
+        "id" : 3,
         "technologies" : ["Illustrator, InDesign"],
         "description" : "The ATX Television Festival's fifth season embraced the theme of \"A Television Experience\". With this as a starting point, I designed a series of materials for the festival. This included an advertisement that appeared in Entertainment Weekly.",
         "add-credit" : ["Photo and logo courtesy ATX Television Festival."],
@@ -62,13 +81,15 @@
             },
             {
                 "image" : "portfolio_snapshots-10.png", "alt" : "atx television festival half page advertisement"
-            }]
+            }],
+        "display" : true
     },
     {
         "title" : "TV Fan",
         "employer" : "ATX Television Festival",
         "year" : 2015,
-        "design-id" : 3,
+        "type" : "design",
+        "id" : 4,
         "technologies" : ["InDesign", "Illustrator"],
         "description" : "A series of designs working around the festival's fourth season theme, \"As Close to Heaven as a Fan Can Get\". I designed the festival poster and program guide cover to after what I imagine would be a TV fan's favorite wall art.",
         "add-credit" : ["Photo and logo courtesy ATX Television Festival."],
@@ -82,6 +103,7 @@
             },
             {
                 "image" : "portfolio_snapshots-09.png", "alt" : "atx television festival drink menu back"
-            }]
+            }],
+        "display" : true
     }]
 }
