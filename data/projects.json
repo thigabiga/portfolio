@@ -7,7 +7,7 @@
         "type" : "code",
         "id" : 0,
         "technologies" : ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "Handlebars.js", "Node.js", "Express.js", "PostgreSQL", "Pg-Promise", "Stripe API", "Socket.io"],
-        "description" : "Bidder is a full-stack web application that simulates a live art auction and allows users to bid on artworks. Using Node.js and the MVC architectural pattern, this application is built to be user-friendly and scalable. I created the database schema and led the implementation of the PostgreSQL database.",
+        "description" : "Bidder is a full-stack web application that simulates a live art auction and allows users to bid on artworks. Using Node.js and the MVC architectural pattern, this application is built to be user-friendly and scalable. I created the database schema and led the implementation of the PostgreSQL database. View the <a href='https://bidder-houston.herokuapp.com' target='_blank'>live demo here</a>.",
         "images" : ["paddle.png"],
         "images-alt" : [{
             "image" : "paddle.png", "alt" : "bidder app logo"
