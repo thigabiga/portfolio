@@ -8,7 +8,7 @@ router.get("/project/:whatever", (req, res) => {
     let theProject = null;
     
     projects.forEach((e) => {
-        if (e["id"] === whateverID) {
+        if (e["id"] === parseInt(whateverID, 10)) {
             theProject = e;
         };
     });    
