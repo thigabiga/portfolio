@@ -6,10 +6,12 @@
         "year" : 2018,
         "type" : "code",
         "id" : 0,
-        "technologies" : "",
-        "description" : "",
-        "images" : [],
-        "images-alt" : [],
+        "technologies" : ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "Handlebars.js", "Node.js", "Express.js", "PostgreSQL", "Pg-Promise", "Stripe API", "Socket.io"],
+        "description" : "Bidder is a full-stack web application that simulates a live art auction and allows users to bid on artworks. Using Node.js and the MVC architectural pattern, this application is built to be user-friendly and scalable. I created the database schema and led the implementation of the PostgreSQL database.",
+        "images" : ["paddle.png"],
+        "images-alt" : [{
+            "image" : "paddle.png", "alt" : "bidder app logo"
+        }],
         "github" : "https://github.com/thigabiga/Bidder-App",
         "video" : ["bidderAppWalkthrough.mov"],
         "display" : true
@@ -20,8 +22,8 @@
         "year" : 2018,
         "type" : "code",
         "id" : 1,
-        "technologies" : ["CSS", "HTML", "Bootstrap", "JavaScript", "jQuery", "Adobe XD", "Git", "AJAX", "Zomato API", "TMDB API", "Google Maps API"],
-        "description" : "Created as part of the 2018 DigitalCrafts Immersive Coding Bootcamp. d8 is a web application that receives user input via a quiz. It outputs restaurant and movie suggestions in the user's area. I worked as a designer as part of a four-person team. I first prototyped the design using Adobe XD and then implemented the styles using HTML, CSS, and JavaScript.",
+        "technologies" : ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "Adobe XD", "Git", "AJAX", "Zomato API", "TMDB API", "Google Maps API"],
+        "description" : "Created as part of the 2018 DigitalCrafts Immersive Coding Bootcamp. d8 is a web application that receives user input via a quiz. It outputs restaurant and movie suggestions in the user's area. I worked as a designer as part of a four-person team. I created the visual design of the project, first prototyping the design using Adobe XD and then implementing the styles using HTML, CSS, Bootstrap, and JavaScript.",
         "add-credit" : [],
         "images" : ["portfolio_snapshots-01.png", "portfolio_snapshots-02.png", "portfolio_snapshots-03.png", "portfolio_snapshots-04.png", "portfolio_snapshots-05.png"],
         "images-alt" : 
@@ -50,7 +52,7 @@
         "year" : 2018,
         "type" : "code",
         "id" : 2,
-        "technologies" : ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+        "technologies" : ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery"],
         "description" : "A simple Blackjack card game built with jQuery, Bootstrap, JavaScript, HTML, and CSS.",
         "add-credit" : [],
         "images" : ["portfolio_snapshots-14.png"],
@@ -69,7 +71,7 @@
         "type" : "design",
         "id" : 3,
         "technologies" : ["Illustrator, InDesign"],
-        "description" : "The ATX Television Festival's fifth season embraced the theme of \"A Television Experience\". With this as a starting point, I designed a series of materials for the festival. This included an advertisement that appeared in Entertainment Weekly.",
+        "description" : "The ATX Television Festival's fifth season embraced the theme of \"A Television Experience.\" With this as a starting point, I designed a series of materials for the festival. This included an advertisement that appeared in Entertainment Weekly.",
         "add-credit" : ["Photo and logo courtesy ATX Television Festival."],
         "images" : ["portfolio_snapshots-12.png", "portfolio_snapshots-11.png", "portfolio_snapshots-10.png"],
         "images-alt" : 

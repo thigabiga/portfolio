@@ -1,23 +1,18 @@
 {{#with myproject}}
 
+    {{!-- HERO BANNER VIDEO --}}
     {{#if video.[0]}}
         <div class="row">
             <div class="col-12 d-flex justify-content-center top-video-padding">
-                <video class="hero-video" poster="../../images/{{images.[0]}}" src="../../images/{{video.[0]}}" type="video/webm" controls autoplay preload />
+                <video class="hero-video" poster="../../images/{{images.[0]}}" src="../../images/{{video.[0]}}" type="video/webm" controls autoplay preload>
                 </video>
             </div>
         </div>
 
-    {{else}}
-        <!-- need to fix header images to fit -->
-        <div class="row">
-            <div class="col-12 hero">
-                <img class="hero-banner" src="../../images/{{images.[0]}}" />
-            </div>
-        </div>
-
+    {{!-- OR HERO BANNER IMAGE --}}
     {{/if}}
 
+    {{!-- PROJECT INFO --}}
     <div class="row text-padding d-flex justify-content-center h3-padding">
         <div class="col-fluid limit-width">
             <h3>{{title}}</h3>
@@ -30,8 +25,6 @@
             <h5 class="header-tagline">Created For {{employer}}</h5>
             <div class="spacer"></div>
             <h6 class="header-tagline">Built With</h6>
-            <!-- need to add IF statement to remove :: before and after list -->
-            <!-- also need to add SORT helper function -->
             <h5 class="header-tagline"> :: {{#each technologies}}{{this}} :: {{/each}}</h5>
             {{#if github}}
             <div class="spacer"></div>
@@ -40,25 +33,24 @@
         </div>
     </div>
 
-    <div class="spacer"></div>
-
-    <div class="row" id="workArtworkGrid">
-
+    {{!-- PROJECT IMAGES --}}
+    {{#if images.[0]}}
+    <div class="row more-space" id="workArtworkGrid">
         {{#each images}}
         <div class="col-xs-12 col-sm-6 col-md-4 grid-thumbnail-col">
             <img class="grid-thumbnail" id="thumbnail-{{@index}}" src="../../images/{{this}}" />
         </div>
         {{/each}}
-
     </div>
+    {{/if}}
 
 {{/with}}
 
-<div class="spacer"></div>
-
-<div class="row text-padding d-flex justify-content-center">
+{{!-- GO BACK --}}
+<div class="row text-padding d-flex justify-content-center more-space">
     <div class="tagline"><a href="javascript:history.back()">Go Back</a></div>
 </div>
 
+{{!-- SCRIPTS --}}
 <script type="text/javascript" src="../../scripts/nav.js" async></script>
 
