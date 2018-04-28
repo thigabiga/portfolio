@@ -21,6 +21,7 @@ var clickOnStuff = document.querySelectorAll("div[data-id]");
         });
         
         temp.addEventListener("click", () => {
+            overlayOff(tempID);
             redirectMe(temp);
         });
         
@@ -43,6 +44,7 @@ var clickOnStuff = document.querySelectorAll("div[data-id]");
     function redirectMe (temp) {
         let projectId = temp.getAttribute("data-id");
         window.location.href = "/project/" + projectId;
-    };    
+    };
+
     
 })();
