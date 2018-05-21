@@ -295,6 +295,11 @@ a:link, a:visited {
     width: 30px;
 }
 
+.nav-hashtag:hover {
+    cursor: pointer;
+    cursor: hand
+}
+
 
 
 /*********** FOOTER STYLES ***********/
