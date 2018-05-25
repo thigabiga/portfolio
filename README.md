@@ -1,7 +1,7 @@
 Portfolio
 ======
 
-Portfolio of code and design samples.
+This is a website I built using JavaScript, Node.js, Express,.js, and Handlebars.js to display a portfolio of code and design samples.
 
 ---
 
