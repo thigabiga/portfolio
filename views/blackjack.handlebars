@@ -1,0 +1,47 @@
+<div id="table" class="row" style="margin-top: 100px;">
+
+    <div class="col blackjack">
+
+        <div id="lets-play">Play Blackjack!</div>
+
+            <div id="messages"></div>
+            
+            <label>Dealer: </label>
+            
+            <label id="dealer-points" class="points"></label>
+            
+            <div id="dealer-hand" class="hand row">
+            
+            </div>
+            
+            <label>Player: </label>
+            
+            <label id="player-points" class="points"></label>
+            
+            <div id="player-hand" class="hand row">
+            
+            </div>
+            
+            <div class="buttons">
+            
+            <button class="blackjack" id="deal-button">Play</button>
+            
+            <button class="blackjack" id="hit-button">Hit Me</button>
+            
+            <button class="blackjack" id="stand-button">Stay</button>
+
+            <span>Wins: <span id="wins-button"></span></span>
+            
+        </div>
+
+    </div>
+
+</div>
+
+{{!-- GO BACK --}}
+<div class="row text-padding d-flex justify-content-center more-space">
+    <div class="tagline"><a href="javascript:history.back()">Go Back</a></div>
+</div>
+
+
+<script type="text/javascript" src="../../scripts/blackjack.js" async></script>

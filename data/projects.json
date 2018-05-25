@@ -53,7 +53,7 @@
         "type" : "code",
         "id" : 2,
         "technologies" : ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery"],
-        "description" : "A simple Blackjack card game built with jQuery, Bootstrap, JavaScript, HTML, and CSS.",
+        "description" : "A simple Blackjack card game built with jQuery, Bootstrap, JavaScript, HTML, and CSS. Play the blackjack game at <a href='http://erinthigpen.com/blackjack'>erinthigpen.com/blackjack.</a>",
         "add-credit" : [],
         "images" : ["portfolio_snapshots-14.png"],
         "images-alt" : 
