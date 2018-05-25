@@ -70,8 +70,6 @@ Deck.prototype.restock = function () {
     if (this.cards.length == 1) {
         this.createDeck();
         this.shuffle();
-    } else {
-        console.log("not empty");
     };
 };
 

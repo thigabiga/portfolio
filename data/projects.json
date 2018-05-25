@@ -1,6 +1,22 @@
 {
     "projects" : 
     [{
+        "title" : "EZForm",
+        "employer" : "DigitalCrafts",
+        "year" : 2018,
+        "type" : "code",
+        "id" : 1,
+        "technologies" : ["Python", "Django", "HTML", "CSS", "Bootstrap", "JavaScript", "Git"],
+        "description" : "Created as part of the 2018 DigitalCrafts Immersive Coding Bootcamp. EZ Form for business is a technical solution for automated documentation.",
+        "add-credit" : [],
+        "images" : [],
+        "images-alt" : 
+            [],
+        "github" : "https://github.com/TheBrotherFromASouthernMother/TitleStore-Project",
+        "video" : [],
+        "display" : true
+    }, 
+    {
         "title" : "Bidder",
         "employer" : "DigitalCrafts",
         "year" : 2018,
