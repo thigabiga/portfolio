@@ -109,7 +109,7 @@
         "type" : "design",
         "id" : 5,
         "technologies" : ["InDesign", "Illustrator"],
-        "description" : "A series of designs working around the festival's fourth season theme, \"As Close to Heaven as a Fan Can Get\". I designed the festival poster and program guide cover to after what I imagine would be a TV fan's favorite wall art.",
+        "description" : "A series of designs working around the festival's fourth season theme, \"As Close to Heaven as a Fan Can Get\". I designed the festival poster and program guide cover after what I imagine would be a TV fan's favorite wall art.",
         "add-credit" : ["Photo and logo courtesy ATX Television Festival."],
         "images" : ["portfolio_snapshots-07.png", "portfolio_snapshots-08.png", "portfolio_snapshots-09.png"],
         "images-alt" : 
@@ -121,6 +121,25 @@
             },
             {
                 "image" : "portfolio_snapshots-09.png", "alt" : "atx television festival drink menu back"
+            }],
+        "display" : true
+    },
+    {
+        "title" : "TV Camp for Grown Ups",
+        "employer" : "ATX Television Festival",
+        "year" : 2018,
+        "type" : "design",
+        "id" : 6,
+        "technologies" : ["InDesign", "Illustrator"],
+        "description" : "A series of designs working around the festival's seventh season theme, \"TV Camp for Grown Ups\". I designed the festival poster, a full-page advertisement that appeared in <i>Austin Monthly</i> and <i>Entertainment Weekly</i>, t-shirts, koozies, bandanas, tote bags, and more.",
+        "add-credit" : ["Logo courtesy ATX Television Festival."],
+        "images" : ["portfolio_snapshots-15.png", "portfolio_snapshots-16.png"],
+        "images-alt" : 
+            [{
+                "image" : "portfolio_snapshots-15.png", "alt" : "atx television festival poster"
+            },
+            {
+                "image" : "portfolio_snapshots-16.png", "alt" : "atx television festival bandana"
             }],
         "display" : true
     }]
