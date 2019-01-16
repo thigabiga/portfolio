@@ -1,10 +1,5 @@
-{{!-- HERO BANNER
-<div class="row hero-solid-color" id="home">
-    <!-- <h1 class="white-center">Hi, there.</h1> -->
-    <a class="nav-hashtag" link-to="about"><img class="down-arrow" src="../../images/arrow.svg" /></a>
-</div>
- --}}
 
+<div class="anchor" id="home"></div>
 <div class="row-fluid top-row">
     <div class="column-fluid letterhead">
         <h1>
@@ -21,9 +16,6 @@
         </h1>
     </div>
 </div>
-
-<br />
-<br />
 
 <div class="anchor" id="about"></div>
 <div class="row-fluid top-row">
@@ -49,43 +41,32 @@
     <div class="headshot-mask">
         <img class="headshot img-fluid" src="../../images/headshot.jpg" />
     </div>
-    <p class="side-note">see erin. see erin code.</p>
 </div>
 
 {{!-- WORK --}}
 <div class="anchor" id="work"></div>
 <div class="row-fluid top-row" id="workArtworkGrid">
     {{#each codeInfo}}
-        <div class="col-xs-12 col-sm-6 col-md-4 grid-thumbnail-col">
-            {{!-- <img class="grid-thumbnail" src="../../images/{{image}}" alt="{{alt}}" />
-            <div class="overlay-color" data-id="{{id}}" id="overlay-{{id}}"></div> --}}
-            <div data-id="{{id}}" id="text-{{id}}">{{title}}</div>
-        </div>
+        <p class="work-link" data-id="{{id}}" id="text-{{id}}">{{title}} [code]</p>
     {{/each}}
-</div>
-
-{{!-- DESIGN PROJECTS --}}
-<div class="row text-padding d-flex h2-padding justify-content-center" id="design">
-    <div class="col-12 d-flex limit-width justify-content-center">
-        <h2>Here's my design gallery.</h2>
-    </div>
-</div>
-<div class="row" id="designArtworkGrid">
     {{#each designInfo}}
-    <div class="col-xs-12 col-sm-6 col-md-4 grid-thumbnail-col">
-        <img class="grid-thumbnail" src="../../images/{{image}}" alt="{{alt}}" />
-        <div class="overlay-color" data-id="{{id}}" id="overlay-{{id}}"></div>
-        <div class="overlay-text" data-id="{{id}}" id="text-{{id}}">{{title}}</div>
-    </div>
+        <p class="work-link" data-id="{{id}}" id="text-{{id}}">{{title}} [design]</p>
     {{/each}}
 </div>
 
-{{!-- SCROLL UP --}}
-<div class="row text-padding d-flex justify-content-center h2-padding">
-    <a class="nav-hashtag tagline" link-to="home">Back to Top</a>   
+{{!-- SKILLS --}}
+<div class="anchor" id="skills"></div>
+<div class="row-fluid top-row" id="workArtworkGrid">
+    {{#each skillInfo}}
+    <i class="{{icon}} fa-2x" data-toggle="tooltip" title="{{title}}" style="padding: 10px;"></i>
+    {{/each}}
 </div>
 
 {{!-- SCRIPTS --}}
 <script type="text/javascript" src="../../scripts/work-nav.js" async></script>
-{{!-- <script type="text/javascript" src="../../scripts/scrolling.js" async></script>
-<script type="text/javascript" src="../../scripts/reverse-nav.js" async></script> --}}
+
+<script type="text/javascript" async>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+</script>

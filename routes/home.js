@@ -6,7 +6,15 @@ router.get("/", (req, res) => {
     let design = [],
         code = [],
         thumbnail = "",
-        altText = "";
+        altText = "",
+        exp = [];
+
+    projectJSON.skills.forEach(skill => {
+        exp = exp.concat({
+            title : skill["title"],
+            icon : skill["icon"]
+        })
+    });
     
     projectJSON.projects.forEach(project => {
         
@@ -44,7 +52,8 @@ router.get("/", (req, res) => {
     
     res.render("home", {
         codeInfo : code,
-        designInfo : design
+        designInfo : design,
+        skillInfo : exp
     });
     
 });

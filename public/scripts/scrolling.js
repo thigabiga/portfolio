@@ -1,4 +1,6 @@
 // fluid scrolling from navbar links using jquery
+// class .nav-hashtag
+// link-to in css
 
 function goToByScroll(id){
     if ($("#"+id).length !== 0) {

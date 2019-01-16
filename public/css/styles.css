@@ -1,31 +1,58 @@
-
-
 /*********** GENERAL LAYOUT STYLES ***********/
 
-footer {
-    position: fixed;
-    padding: 20px;
-    background-color: white;
-    width: 100%;
-    bottom: 0;
-}
-
 .top-row {
-    margin: 150px 20px;
+    padding: 100px 10px;
 }
 
 .letterhead {
+    /* FRONT PAGE */
     max-width: 250px;
 }
 
+/*********** NAV STYLES ***********/
 
+.header-menu {
+    background-color: white;
+    border-bottom: 1px solid #161616;
+    overflow: hidden;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-top-hashtag {
+    color: #161616;
+    font-family: "Futura", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+}
+
+/*********** FOOTER STYLES ***********/
+
+.footer-menu {
+    background-color: white;
+    border-bottom: 1px solid #161616;
+    bottom: 0;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-bottom-hashtag {
+    color: #54B948;
+    font-family: "Futura", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+}
 
 /*********** TEXT STYLES ***********/
 
 a, a:visited, a:hover {
     color: #54B948;
     font-family: "Futura", sans-serif;
-    font-weight: 400;
     text-transform: lowercase;
 }
 
@@ -52,16 +79,11 @@ p {
     text-transform: lowercase;
 }
 
-p.side-note {
+.work-link:hover {
     color: #54B948;
-    font-family: "Futura", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    text-align: left;
-    text-transform: lowercase;    
+    cursor: pointer;
+    text-decoration: underline;
 }
-
 
 /*********** IMAGE GRID STYLES ***********/
 
@@ -193,89 +215,4 @@ p.side-note {
 }
 
 
-
-/*********** NAV STYLES ***********/
-
-/* .nav-hashtag {
-
-}
-
-.nav-hashtag, .nav-hashtag:active, .nav-hashtag:hover {
-    color: #54B948;
-    font-family: "Futura", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: lowercase;
-} */
-
-div.header-menu {
-    padding: 20px;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-    position: fixed;
-    letter-spacing: 2px;
-}
-
-.nav-top-hashtag {
-    font-size: 14px;
-    color: #161616;
-    font-family: "Futura", sans-serif;
-    text-transform: lowercase;
-}
-
-.nav-top-hashtag:active {
-    color: #54B948;
-}
-
-.table {
-	display: table;   /* Allow the centering to work */
-}
-
-ul.header-nav {
-	min-width: 696px;
-	list-style: none;
-	padding-top: 10px;
-}
-    
-li.header-nav-item {
-    display: inline;
-}
-
-div.header-right {
-    float: right;
-}
-
-
-
-/*********** FOOTER STYLES ***********/
-
-
-
-a.nav-bottom-hashtag {
-    color: #54B948;
-    font-family: "Futura", sans-serif;
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-align: center;
-    text-transform: lowercase;
-}
-
-
-
-/*********** SPACERS AND STUFF - NEED TO ORGANIZE ***********/
-
-
-
-.text-float-right {
-    overflow: hidden;
-}
-
-.down-arrow {
-    width: 50px;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-}
 

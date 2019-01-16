@@ -1,4 +1,45 @@
 {
+    "skills" :
+    [{
+        "title" : "JavaScript",
+        "icon"  : "fab fa-js"
+    },
+    {
+        "title" : "Node.js",
+        "icon"  : "fab fa-node-js"
+    },
+    {
+        "title" : "HTML5",
+        "icon"  : "fab fa-html5"
+    },
+    {
+        "title" : "CSS",
+        "icon"  : "fab fa-css3-alt"
+    },
+    {
+        "title" : "Git",
+        "icon"  : "fab fa-github"
+    },
+    {
+        "title" : "React",
+        "icon"  : "fab fa-react"
+    },
+    {
+        "title" : "WordPress",
+        "icon"  : "fab fa-wordpress"
+    },
+    {
+        "title" : "Digital Illustration",
+        "icon"  : "fas fa-pen-nib"
+    },
+    {
+        "title" : "BitBucket",
+        "icon"  : "fab fa-bitbucket"
+    },
+    {
+        "title" : "Python",
+        "icon"  : "fab fa-python"
+    }],
     "projects" : 
     [{
         "title" : "EZForm",
