@@ -2,7 +2,7 @@
 
 
 ////////// GET GRID STUFF
-var clickOnStuff = document.querySelectorAll("div[data-id]");
+var clickOnStuff = document.querySelectorAll("p[data-id]");
 
 (function toggleGrid() {
     "use strict";
@@ -12,16 +12,16 @@ var clickOnStuff = document.querySelectorAll("div[data-id]");
         let temp = clickOnStuff[i],
             tempID = temp.getAttribute("data-id");
                 
-        temp.addEventListener("mouseover", () => {
-            overlayOn(tempID);
-        });
+        // temp.addEventListener("mouseover", () => {
+        //     overlayOn(tempID);
+        // });
         
-        temp.addEventListener("mouseout", () => {
-            overlayOff(tempID);
-        });
+        // temp.addEventListener("mouseout", () => {
+        //     overlayOff(tempID);
+        // });
         
         temp.addEventListener("click", () => {
-            overlayOff(tempID);
+            // overlayOff(tempID);
             redirectMe(temp);
         });
         
@@ -42,6 +42,7 @@ var clickOnStuff = document.querySelectorAll("div[data-id]");
     };
     
     function redirectMe (temp) {
+        console.log(temp);
         let projectId = temp.getAttribute("data-id");
         window.location.href = "/project/" + projectId;
     };

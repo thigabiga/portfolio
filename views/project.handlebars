@@ -1,54 +1,46 @@
 {{#with myproject}}
 
-    {{!-- HERO BANNER VIDEO --}}
-    {{#if video.[0]}}
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center top-video-padding">
-                <video class="hero-video" poster="../../images/{{images.[0]}}" src="../../images/{{video.[0]}}" type="video/webm" controls autoplay preload>
-                </video>
+    {{!-- ABOUT --}}
+    <div class="row-fluid box">
+        <h5>{{title}}</h5>
+    </div>
+
+    <div class="row-fluid">
+        <h6>created for {{employer}}</h6>
+        <h6>built with • {{#each technologies}}{{this}} • {{/each}}</h6>
+    </div>
+
+    <div class="row-fluid box">
+        <p>{{{description}}}</p>
+    </div>
+
+    {{!-- IMAGES --}}
+    <div class="row-fluid">
+        {{#if images.[0]}}
+            {{#each images}}
+            <div class="col-12 work-image-mask">
+                <img class="work-image" id="thumbnail-{{@index}}" src="../../images/{{this}}" />
             </div>
-        </div>
-
-    {{!-- OR HERO BANNER IMAGE --}}
-    {{/if}}
-
-    {{!-- PROJECT INFO --}}
-    <div class="row text-padding d-flex justify-content-center h3-padding">
-        <div class="col-fluid limit-width">
-            <h3>{{title}}</h3>
-        </div>
+            {{/each}}
+        {{/if}}
     </div>
-    <div class="row text-padding d-flex justify-content-center">
-        <div class="col-fluid limit-width">
-            <p>{{{description}}}</p>
-            <div class="spacer"></div>
-            <h5 class="header-tagline">Created For {{employer}}</h5>
-            <div class="spacer"></div>
-            <h6 class="header-tagline">Built With</h6>
-            <h5 class="header-tagline"> :: {{#each technologies}}{{this}} :: {{/each}}</h5>
-            {{#if github}}
-            <div class="spacer"></div>
-            <div class="tagline"><a href="{{github}}" target="_blank">GitHub</a></div>
-            {{/if}}
-        </div>
-    </div>
-
-    {{!-- PROJECT IMAGES --}}
-    {{#if images.[0]}}
-    <div class="row more-space" id="workArtworkGrid">
-        {{#each images}}
-        <div class="col-xs-12 col-sm-6 col-md-4 grid-thumbnail-col">
-            <img class="grid-thumbnail" id="thumbnail-{{@index}}" src="../../images/{{this}}" />
-        </div>
-        {{/each}}
-    </div>
-    {{/if}}
 
 {{/with}}
 
 {{!-- GO BACK --}}
-<div class="row text-padding d-flex justify-content-center more-space">
-    <div class="tagline"><a href="javascript:history.back()">Go Back</a></div>
+<div class="row-fluid box">
+    <p><a href="javascript:history.back()" style="font-size: 10px; letter-spacing: 2px;">Go Back</a></p>
 </div>
+
+
+    {{!-- VIDEO --}}
+    {{#if video.[0]}}
+        <div class="row d-flex justify-content-center">
+            <div class="col-fluid">
+                <video style="width: 100%; max-height: 400px; margin-top: 40px;" poster="../../images/{{images.[0]}}" src="../../images/{{video.[0]}}" type="video/webm" controls autoplay preload>
+                </video>
+            </div>
+        </div>
+    {{/if}}
 
 {{!-- SCRIPTS --}}

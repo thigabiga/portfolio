@@ -1,25 +1,25 @@
 
 <div class="anchor" id="home"></div>
-<div class="row-fluid top-row">
-    <div class="column-fluid letterhead">
-        <h1>
-            my name is
+<div class="row-fluid box d-flex justify-content-center">
+    <div class="col" style="max-width: 800px;">
+        <h1 style="text-align: right;">
+            my name is<br />
             <span style="text-decoration: underline #54B948">erin thigpen</span>.
         </h1>
-        <h1>
+        <h1 style="text-align: center; font-size: 80px;">
             \
         </h1>
         <h1>
             i am a
-            developer
+            developer<br />
             and designer.
         </h1>
     </div>
 </div>
 
-<div class="anchor" id="about"></div>
-<div class="row-fluid top-row">
-    <div class="column-fluid">
+<div class="anchor box" id="about"></div>
+<div class="row-fluid box d-flex justify-content-center">
+    <div class="col box" style="max-width: 800px;">
         <p>
             my name is erin. my friends call me “thig.” 
         </p>
@@ -37,29 +37,38 @@
 </div>
 
 {{!-- HEADSHOT --}}
-<div class="row-fluid top-row d-flex justify-content-center">
+<div class="row-fluid d-flex justify-content-center box">
     <div class="headshot-mask">
         <img class="headshot img-fluid" src="../../images/headshot.jpg" />
     </div>
 </div>
 
+<div class="box"></div>
+
 {{!-- WORK --}}
-<div class="anchor" id="work"></div>
-<div class="row-fluid top-row" id="workArtworkGrid">
+<div class="anchor box" id="code"></div>
+<div class="row box" id="workArtworkGrid">
+    <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
+        <h1 style="text-align: center; font-size: 80px;">\</h1>
+    </div>
+    <div class="col-sm-12 col-md-6">
     {{#each codeInfo}}
         <p class="work-link" data-id="{{id}}" id="text-{{id}}">{{title}} [code]</p>
     {{/each}}
     {{#each designInfo}}
         <p class="work-link" data-id="{{id}}" id="text-{{id}}">{{title}} [design]</p>
     {{/each}}
+    </div>
 </div>
 
 {{!-- SKILLS --}}
-<div class="anchor" id="skills"></div>
-<div class="row-fluid top-row" id="workArtworkGrid">
-    {{#each skillInfo}}
-    <i class="{{icon}} fa-2x" data-toggle="tooltip" title="{{title}}" style="padding: 10px;"></i>
-    {{/each}}
+<div class="anchor box" id="skills"></div>
+<div class="row" id="workArtworkGrid">
+    <div class="col box">
+        {{#each skillInfo}}
+        <i class="{{icon}} fa-2x" data-toggle="tooltip" title="{{title}}" style="padding: 10px;"></i>
+        {{/each}}
+    </div>
 </div>
 
 {{!-- SCRIPTS --}}
