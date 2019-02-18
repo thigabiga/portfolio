@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Trocchi');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900,400i,900i|Inconsolata|Noto+Serif:400,700');
 
-/*********** GENERAL LAYOUT STYLES ***********/
+/*********** LAYOUT STYLES ***********/
 
 body {
-    margin: 60px 0px;
+    margin: 100px 0px;
     padding: 0px;
 }
 
@@ -15,8 +15,9 @@ body {
 /*********** NAV STYLES ***********/
 
 .header-menu {
-    background-color: white;
-    border-bottom: 1px solid #2E2C2F;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #6D6A75;
+    min-height: 120px;
     overflow: hidden;
     padding: 20px;
     position: fixed;
@@ -25,82 +26,91 @@ body {
     z-index: 1;
 }
 
-.nav-top-hashtag {
+.brand-name, a.brand-name, a.brand-name:visited {
     color: #2E2C2F;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    letter-spacing: 2px;
-}
-
-.brand-name {
-    color: #2E2C2F;
-    font-family: "Lato", sans-serif;
+    font-family: "Inconsolata", serif;
     font-size: 16px;
-    letter-spacing: 2px;
-    /* text-transform: uppercase;    */
+    letter-spacing: 10px;
+    text-transform: uppercase;
 }
 
-/*********** FOOTER STYLES ***********/
+a.brand-name:hover {
+    color: #BBD8B3;
+}
+
+.nav-top-hashtag, a.nav-top-hashtag, a.nav-top-hashtag:visited {
+    color: #2E2C2F;
+    font-family: "Inconsolata", sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    margin-left: 20px;
+}
+
+a.nav-top-hashtag:hover {
+    color: #BBD8B3;
+}
+
+.navbar-toggle-icon {
+    height: auto;
+    width: 30px;
+}
 
 .footer-menu {
-    background-color: white;
-    border-top: 1px solid #2E2C2F;
+    background-color: #FFFFFF;
+    border-top: 1px solid #6D6A75;
     bottom: 0;
-    padding: 20px;
+    left: 0;
+    padding: 10px;
     position: fixed;
+    text-align: right;
     width: 100%;
 }
 
-.nav-bottom-hashtag {
-    color: #EF6461;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    letter-spacing: 2px;
+.nav-bottom-hashtag, a.nav-bottom-hashtag, a.nav-bottom-hashtag:visited {
+    color: #FFBA49;
+    font-family: "Inconsolata", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+
+a.nav-bottom-hashtag:hover {
+    color: #BBD8B3;
 }
 
 /*********** TEXT STYLES ***********/
 
-a, a:visited, a:hover {
-    color: #EF6461;
-    font-family: "Lato", sans-serif;
+a, a:visited {
+    color: #EF5B5B;
+    text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #2E2C2F;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
+a:hover {
+    color: #BBD8B3;
+    text-decoration: none;
+}
+
+h2, h3, h4, h5 {
+    color: #37323E;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
     padding-bottom: 30px;
     text-align: left;
 }
 
 p {
-    color: #2B2D42;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 42px;
-    padding-bottom: 20px;
+    color: #37323E;
+    font-family: "Inconsolata", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
     text-align: left;
 }
 
-.work-link:hover {
-    color: #EF6461;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-/*********** IMAGE STYLES ***********/
-
-.work-image-mask {
-    max-height: 200px;
-    object-fit: cover;
-    overflow: hidden;
-}
-
-.work-image {
-    object-position: 50% 50%;
-    width: 100%;
-}
+/*********** IMAGE ***********/
 
 .headshot {
     object-fit: cover;
@@ -108,8 +118,111 @@ p {
     height: 450px;
 }
 
+/*********** MAIN GRID ***********/
+
+.row-tiled {
+    margin: 125px -10px;
+}
+
 .tiled {
-    height: 400px;
-    object-fit: cover;
-    width: 100%;
+    background-color: #BBD8B3;
+    height: 300px;
+    margin: 5px -10px;
+    padding: 40px;
+}
+
+h6 {
+    color: #37323E;
+    cursor: pointer;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: left;
+    font-style: oblique;  
+}
+
+h6:hover {
+    color: #EF5B5B;
+}
+
+p.tiled-text {
+    color: #37323E;
+    font-family: "Inconsolata", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+}
+
+/*********** PROJECT GRID ***********/
+
+h1 {
+    color: #EF5B5B;
+    font-family: "Playfair Display", serif;
+    font-size: 100px;
+    font-style: oblique;
+    font-weight: 900;
+    padding-top: 20px;
+    word-wrap: break-word;
+}
+
+@media (min-width: 576px) {
+    h1 {
+        font-size: 200px;
+    }
+}
+
+.project-image {
+    object-fit: contain;
+    width: 250px;
+    height: auto;
+}
+
+.video-hero {
+    background-color: #BBD8B3;
+    /* padding: 40px; */
+    margin-bottom: 100px;
+}
+
+.video-hero > video {
+    width: 250px;
+    height: auto;
+}
+
+@media (min-width: 576px) {
+    .video-hero > video {
+        width: 300px;
+        height: auto;
+    }
+
+    .project-image {
+        object-fit: contain;
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .video-hero > video {
+        width: 400px;
+        height: auto;
+    }
+
+    .project-image {
+        object-fit: contain;
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .video-hero > video {
+        width: 800px;
+        height: auto;
+    }
+    
+    .project-image {
+        object-fit: contain;
+        width: 800px;
+        height: auto;
+    }
 }

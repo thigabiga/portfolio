@@ -1,40 +1,36 @@
 {{#with myproject}}
 
 {{!-- HERO --}}
-<div class="row">
-    <img class="headshot" src="../../images/{{images.[0]}}" />
+<div class="row-fluid">
+    <h1>{{abbrev}}</h1>
 </div>
 
 {{!-- ABOUT --}}
 <div class="row-fluid d-flex justify-content-center">
     <div class="col space-around">
         <h2>{{title}}</h2>
-        <p>{{description}}</p>
+        <p>{{{description}}}</p>
+        {{#if github}}
+        <a href="{{github}}" target="blank" class="nav-bottom-hashtag">[ GitHub ]</a>
+        {{/if}}
     </div>
 </div>
 
+{{!-- VIDEO --}}
+{{#if video}}
+    <div class="row video-hero d-flex justify-content-center">
+        <video controls>
+            <source src="../../images/{{video}}" type="video/mp4">
+        </video>
+    </div>
+{{/if}}
+
 {{!-- IMAGES --}}
-<div class="row" id="workArtworkGrid">
+<div class="row d-flex" id="workArtworkGrid">
     {{#each images}}
-    <div class="col-sm-12 col-md-6 col-lg-4">
-        <img class="img-fluid tiled" src="../../images/{{this}}" />
-        <p class="work-link" id="thumbnail-{{@index}}">{{title}}</p>
+    <div class="col d-flex justify-content-center">
+        <img class="project-image" src="../../images/{{image}}" />
     </div>
     {{/each}}
 </div>
 {{/with}}
-
-{{!-- GO BACK
-<div class="row-fluid">
-    <p><a href="javascript:history.back()" style="font-size: 10px; letter-spacing: 2px;">Go Back</a></p>
-</div>
-
-
-    {{#if video.[0]}}
-        <div class="row d-flex justify-content-center">
-            <div class="col-fluid">
-                <video style="width: 100%; max-height: 400px; margin-top: 40px;" poster="../../images/{{images.[0]}}" src="../../images/{{video.[0]}}" type="video/webm" controls autoplay preload>
-                </video>
-            </div>
-        </div>
-    {{/if}} --}}

@@ -9,6 +9,7 @@ router.get("/", (req, res) => {
 
     // PROJECT INFO FOR MAIN GRID
     projectJSON.projects.forEach(project => {
+        console.log(project["short"]);
         
         if (project["display"] === true) {
             thumbnail = project["images"][0]["image"];
@@ -18,10 +19,13 @@ router.get("/", (req, res) => {
                 id : project["id"],
                 title : project["title"],
                 image : thumbnail,
-                alt : altText
+                alt : altText,
+                description : project["short"]
             });
         };
     });
+    
+    console.log(work);
     
     res.render("home", {
         workInfo : work,

@@ -1,11 +1,17 @@
-<div class="header-menu">
-    <div class="d-flex justify-content-between">
-        <div>
-            <a href="/" class="brand-name">Erin Thigpen</a>
-        </div>
-        <div>
-            <a href="/about" class="nav-top-hashtag">About</a>
-            <a href="/" class="nav-top-hashtag" style="padding-left: 20px;">Work</a>
-        </div>
+{{!-- HEADER NAVIGATION --}}
+<nav class="navbar navbar-expand-sm navbar-light d-flex fixed-top header-menu">
+    <a class="brand-name" href="/">Erin Thigpen</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="navbar-toggle-icon" src="../../images/circledot.svg" alt="toggler">
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-top-hashtag" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-top-hashtag" href="/">Work</a>
+            </li>
+        </ul>
     </div>
-</div>
+</nav>

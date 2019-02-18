@@ -1,5 +1,5 @@
-const   router = require("express").Router(),
-        projects = require("../data/projects.json")["projects"];
+const router = require("express").Router(),
+      projects = require("../data/projects.json")["projects"];
 
 router.get("/project/:whatever", (req, res) => {
     

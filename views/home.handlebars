@@ -1,9 +1,15 @@
 {{!-- WORK --}}
-<div class="row" id="workArtworkGrid">
+<div class="row d-flex row-tiled" id="workArtworkGrid">
     {{#each workInfo}}
-    <div class="col-sm-12 col-md-6 col-lg-4">
-        <img class="img-fluid tiled" src="../../images/{{image}}" />
-        <p class="work-link" data-id="{{id}}" id="text-{{id}}">{{title}}</p>
+    <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="tiled d-flex">
+            <div class="d-flex align-self-center">
+                <div>
+                    <h6 data-id="{{id}}">{{title}}</h6>
+                    <p class="tiled-text">{{{description}}}</p>
+                </div>
+            </div>
+        </div>
     </div>
     {{/each}}
 </div>
