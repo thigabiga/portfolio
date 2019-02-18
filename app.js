@@ -26,6 +26,7 @@ app.use((req, res, next) => {
 app.use(require(__dirname + "/routes/home"));
 app.use(require(__dirname + "/routes/project"));
 app.use(require(__dirname + "/routes/blackjack"));
+app.use(require(__dirname + "/routes/about"));
 
 app.use((req, res) => {
     res.type("text/html");

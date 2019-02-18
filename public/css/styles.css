@@ -1,39 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Trocchi');
+
 /*********** GENERAL LAYOUT STYLES ***********/
 
 body {
-    margin: 100px 0px;
+    margin: 60px 0px;
+    padding: 0px;
 }
 
-.box {
-    padding-top: 40px;
-    padding-bottom: 40px;
+.space-around {
+    max-width: 600px;
+    padding: 100px 0px;
 }
 
 /*********** NAV STYLES ***********/
 
 .header-menu {
     background-color: white;
-    border-bottom: 1px solid #161616;
+    border-bottom: 1px solid #2E2C2F;
     overflow: hidden;
     padding: 20px;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .nav-top-hashtag {
-    color: #161616;
-    font-family: "Futura", sans-serif;
-    font-size: 12px;
+    color: #2E2C2F;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
     letter-spacing: 2px;
-    text-transform: lowercase;
+}
+
+.brand-name {
+    color: #2E2C2F;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    /* text-transform: uppercase;    */
 }
 
 /*********** FOOTER STYLES ***********/
 
 .footer-menu {
     background-color: white;
-    border-top: 1px solid #161616;
+    border-top: 1px solid #2E2C2F;
     bottom: 0;
     padding: 20px;
     position: fixed;
@@ -41,64 +52,44 @@ body {
 }
 
 .nav-bottom-hashtag {
-    color: #54B948;
-    font-family: "Futura", sans-serif;
-    font-size: 12px;
+    color: #EF6461;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
     letter-spacing: 2px;
-    text-transform: lowercase;
 }
 
 /*********** TEXT STYLES ***********/
 
 a, a:visited, a:hover {
-    color: #54B948;
-    font-family: "Futura", sans-serif;
-    text-transform: lowercase;
+    color: #EF6461;
+    font-family: "Lato", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #161616;
-    font-family: "Futura", sans-serif;
+    color: #2E2C2F;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
+    padding-bottom: 30px;
     text-align: left;
-    text-transform: lowercase;
-}
-
-@media (min-width: 768px) {
-    h1 {
-        font-size: 60px;
-        line-height: 60px;
-    }
-}
-
-h5 {
-    color: #54B948;
-    text-decoration: underline;
-}
-
-h6 {
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin-top: 20px;
 }
 
 p {
-    color: #161616;
-    font-family: "Futura", sans-serif;
-    font-size: 16px;
+    color: #2B2D42;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 42px;
+    padding-bottom: 20px;
     text-align: left;
-    text-transform: lowercase;
 }
 
 .work-link:hover {
-    color: #54B948;
+    color: #EF6461;
     cursor: pointer;
     text-decoration: underline;
 }
 
-/*********** WORK IMAGE STYLES ***********/
+/*********** IMAGE STYLES ***********/
 
 .work-image-mask {
     max-height: 200px;
@@ -111,18 +102,14 @@ p {
     width: 100%;
 }
 
-/*********** HEADSHOT IMAGE STYLES ***********/
-
-.headshot-mask {
-    border-radius: 100%;
-    height: 250px;
-    width: 250px;
+.headshot {
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
 }
 
-.headshot {
-    border-radius: 100%;
-    height: 100%;
-    width: 100%;
+.tiled {
+    height: 400px;
     object-fit: cover;
-    overflow: hidden;
+    width: 100%;
 }

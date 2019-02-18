@@ -1,39 +1,35 @@
 {{#with myproject}}
 
-    {{!-- ABOUT --}}
-    <div class="row-fluid box">
-        <h5>{{title}}</h5>
-    </div>
+{{!-- HERO --}}
+<div class="row">
+    <img class="headshot" src="../../images/{{images.[0]}}" />
+</div>
 
-    <div class="row-fluid">
-        <h6>created for {{employer}}</h6>
-        <h6>built with • {{#each technologies}}{{this}} • {{/each}}</h6>
+{{!-- ABOUT --}}
+<div class="row-fluid d-flex justify-content-center">
+    <div class="col space-around">
+        <h2>{{title}}</h2>
+        <p>{{description}}</p>
     </div>
+</div>
 
-    <div class="row-fluid box">
-        <p>{{{description}}}</p>
+{{!-- IMAGES --}}
+<div class="row" id="workArtworkGrid">
+    {{#each images}}
+    <div class="col-sm-12 col-md-6 col-lg-4">
+        <img class="img-fluid tiled" src="../../images/{{this}}" />
+        <p class="work-link" id="thumbnail-{{@index}}">{{title}}</p>
     </div>
-
-    {{!-- IMAGES --}}
-    <div class="row-fluid">
-        {{#if images.[0]}}
-            {{#each images}}
-            <div class="col-12 work-image-mask">
-                <img class="work-image" id="thumbnail-{{@index}}" src="../../images/{{this}}" />
-            </div>
-            {{/each}}
-        {{/if}}
-    </div>
-
+    {{/each}}
+</div>
 {{/with}}
 
-{{!-- GO BACK --}}
-<div class="row-fluid box">
+{{!-- GO BACK
+<div class="row-fluid">
     <p><a href="javascript:history.back()" style="font-size: 10px; letter-spacing: 2px;">Go Back</a></p>
 </div>
 
 
-    {{!-- VIDEO --}}
     {{#if video.[0]}}
         <div class="row d-flex justify-content-center">
             <div class="col-fluid">
@@ -41,6 +37,4 @@
                 </video>
             </div>
         </div>
-    {{/if}}
-
-{{!-- SCRIPTS --}}
+    {{/if}} --}}

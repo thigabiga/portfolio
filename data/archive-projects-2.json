@@ -42,19 +42,35 @@
     }],
     "projects" : 
     [{
+        "title" : "EZForm",
+        "employer" : "DigitalCrafts",
+        "year" : 2018,
+        "type" : "code",
+        "id" : 0,
+        "technologies" : ["Python", "Django", "HTML", "CSS", "Bootstrap", "JavaScript", "Git"],
+        "description" : "Created as part of the 2018 DigitalCrafts Immersive Coding Bootcamp. EZ Form for business is a technical solution for automated documentation.",
+        "add-credit" : [],
+        "images" : [],
+        "images-alt" : 
+            [],
+        "github" : "https://github.com/TheBrotherFromASouthernMother/TitleStore-Project",
+        "video" : [],
+        "display" : true
+    }, 
+    {
         "title" : "Bidder",
         "employer" : "DigitalCrafts",
         "year" : 2018,
         "type" : "code",
         "id" : 1,
-        "technologies" : "Built with HTML, CSS, Bootstrap, JavaScript, jQuery, Git, Handlebars.js, Node.js, Express.js, PostgreSQL, Pg-Promise, Stripe API, and Socket.io.",
+        "technologies" : ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "Handlebars.js", "Node.js", "Express.js", "PostgreSQL", "Pg-Promise", "Stripe API", "Socket.io"],
         "description" : "Bidder is a full-stack web application that simulates a live art auction and allows users to bid on artworks. Using Node.js and the MVC architectural pattern, this application is built to be user-friendly and scalable. I created the database schema and led the implementation of the PostgreSQL database. View the <a href='https://bidder-houston.herokuapp.com' target='_blank'>live demo here</a>.",
-        "images" :
-        [{
+        "images" : ["paddle.png"],
+        "images-alt" : [{
             "image" : "paddle.png", "alt" : "bidder app logo"
         }],
         "github" : "https://github.com/thigabiga/Bidder-App",
-        "video" : "bidderAppWalkthrough.mov",
+        "video" : ["bidderAppWalkthrough.mov"],
         "display" : true
     },
     {
@@ -63,10 +79,11 @@
         "year" : 2018,
         "type" : "code",
         "id" : 2,
-        "technologies" : "Built with HTML, CSS, Bootstrap, JavaScript, jQuery, Adobe XD, Git, AJAX, Zomato API, TMDB API, and the Google Maps API",
-        "description" : "Created as part of the 2018 DigitalCrafts Immersive Coding Bootcamp, d8 is a web application that receives user input via a quiz. It outputs restaurant and movie suggestions in the user's area. I worked as a designer as part of a four-person team. I created the visual design of the project, first prototyping the design using Adobe XD and then implementing the styles using HTML, CSS, Bootstrap, and JavaScript.",
+        "technologies" : ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "Adobe XD", "Git", "AJAX", "Zomato API", "TMDB API", "Google Maps API"],
+        "description" : "Created as part of the 2018 DigitalCrafts Immersive Coding Bootcamp. d8 is a web application that receives user input via a quiz. It outputs restaurant and movie suggestions in the user's area. I worked as a designer as part of a four-person team. I created the visual design of the project, first prototyping the design using Adobe XD and then implementing the styles using HTML, CSS, Bootstrap, and JavaScript.",
         "add-credit" : [],
-        "images" : 
+        "images" : ["portfolio_snapshots-01.png", "portfolio_snapshots-02.png", "portfolio_snapshots-03.png", "portfolio_snapshots-04.png", "portfolio_snapshots-05.png"],
+        "images-alt" : 
             [{
                 "image" : "portfolio_snapshots-01.png", "alt" : "d8 web application front page"
             },
@@ -83,7 +100,7 @@
                 "image" : "portfolio_snapshots-05.png", "alt" : "d8 web application itinerary page"
             }],
         "github" : "https://github.com/thigabiga/D8",
-        "video" : "d8-video.mp4",
+        "video" : ["d8-video.mp4"],
         "display" : true
     },
     {
@@ -92,15 +109,16 @@
         "year" : 2018,
         "type" : "code",
         "id" : 3,
-        "technologies" : "Built with HTML, CSS, Bootstrap, JavaScript, and jQuery.",
-        "description" : "A simple Blackjack card game built with jQuery, Git, Bootstrap, JavaScript, HTML, and CSS. Try it out! Play the blackjack game <a href='http://www.erinthigpen.com/blackjack'>online here.</a>",
+        "technologies" : ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery"],
+        "description" : "A simple Blackjack card game built with jQuery, Bootstrap, JavaScript, HTML, and CSS. Try it out — play the blackjack game <a href='http://www.erinthigpen.com/blackjack'>online here.</a>",
         "add-credit" : [],
-        "images" : 
+        "images" : ["portfolio_snapshots-14.png"],
+        "images-alt" : 
             [{
                 "image" : "portfolio_snapshots-14.png", "alt" : "blackjack game"
             }],
         "github" : "https://github.com/thigabiga/blackjack",
-        "video" : "blackjack-video.mov",
+        "video" : ["blackjack-video.mov"],
         "display" : true
     },
     {
@@ -109,15 +127,19 @@
         "year" : 2016,
         "type" : "design",
         "id" : 4,
-        "technologies" : "Built with Adobe InDesign and Illustrator",
+        "technologies" : ["Illustrator, InDesign"],
         "description" : "The ATX Television Festival's fifth season embraced the theme of \"A Television Experience.\" With this as a starting point, I designed a series of materials for the festival. This included an advertisement that appeared in Entertainment Weekly.",
         "add-credit" : ["Photo and logo courtesy ATX Television Festival."],
-        "images" :
+        "images" : ["portfolio_snapshots-12.png", "portfolio_snapshots-11.png", "portfolio_snapshots-10.png"],
+        "images-alt" : 
             [{
                 "image" : "portfolio_snapshots-12.png", "alt" : "atx television festival full page advertisement"
             },
             {
                 "image" : "portfolio_snapshots-11.png", "alt" : "atx television festival program guide cover"
+            },
+            {
+                "image" : "portfolio_snapshots-10.png", "alt" : "atx television festival half page advertisement"
             }],
         "display" : true
     },
@@ -127,10 +149,11 @@
         "year" : 2015,
         "type" : "design",
         "id" : 5,
-        "technologies" : "Built with Adobe InDesign and Illustrator",
+        "technologies" : ["InDesign", "Illustrator"],
         "description" : "A series of designs working around the festival's fourth season theme, \"As Close to Heaven as a Fan Can Get\". I designed the festival poster and program guide cover after what I imagine would be a TV fan's favorite wall art.",
         "add-credit" : ["Photo and logo courtesy ATX Television Festival."],
-        "images" : 
+        "images" : ["portfolio_snapshots-07.png", "portfolio_snapshots-08.png", "portfolio_snapshots-09.png"],
+        "images-alt" : 
             [{
                 "image" : "portfolio_snapshots-07.png", "alt" : "atx television festival program guide cover"
             },
@@ -143,16 +166,21 @@
         "display" : true
     },
     {
-        "title" : "Blue Bird Christmas",
-        "employer" : "The Blue Bird Circle",
+        "title" : "TV Camp for Grown Ups",
+        "employer" : "ATX Television Festival",
         "year" : 2018,
         "type" : "design",
-        "id" : 7,
-        "technologies" : "Built with Adobe Illustrator",
-        "description" : "A flyer/poster design for The Blue Bird Circle Resale Shop's annual Christmas event.",
-        "images" : 
+        "id" : 6,
+        "technologies" : ["InDesign", "Illustrator"],
+        "description" : "A series of designs working around the festival's seventh season theme, \"TV Camp for Grown Ups\". I designed the festival poster, a full-page advertisement that appeared in <i>Austin Monthly</i> and <i>Entertainment Weekly</i>, t-shirts, koozies, bandanas, tote bags, and more.",
+        "add-credit" : ["Logo courtesy ATX Television Festival."],
+        "images" : ["portfolio_snapshots-15.png", "portfolio_snapshots-16.png"],
+        "images-alt" : 
             [{
-                "image" : "Bluebird Circle Flyer PROOF - corrected-01.png", "alt" : "The Blue Bird Circle Christmas Flyer"
+                "image" : "portfolio_snapshots-15.png", "alt" : "atx television festival poster"
+            },
+            {
+                "image" : "portfolio_snapshots-16.png", "alt" : "atx television festival bandana"
             }],
         "display" : true
     }]
