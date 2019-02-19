@@ -142,7 +142,7 @@ h6 {
 }
 
 h6:hover {
-    color: #EF5B5B;
+    color: #FFFFFF;
 }
 
 p.tiled-text {
@@ -156,7 +156,7 @@ p.tiled-text {
 /*********** PROJECT GRID ***********/
 
 h1 {
-    color: #EF5B5B;
+    color: #37323E;
     font-family: "Playfair Display", serif;
     font-size: 100px;
     font-style: oblique;
@@ -167,8 +167,19 @@ h1 {
 
 @media (min-width: 576px) {
     h1 {
+        font-size: 150px;
+    }
+}
+
+@media (min-width: 992px) {
+    h1 {
         font-size: 200px;
     }
+}
+
+.green-hero {
+    background-color: #BBD8B3;
+    padding: 40px;
 }
 
 .project-image {
@@ -179,7 +190,6 @@ h1 {
 
 .video-hero {
     background-color: #BBD8B3;
-    /* padding: 40px; */
     margin-bottom: 100px;
 }
 

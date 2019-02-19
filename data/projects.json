@@ -2,9 +2,8 @@
     "projects" : 
     [{
         "id" : 1,
-        "abbrev" : "Sold!",
         "title" : "Bidder",
-        "short" : "Full-stack web app.",
+        "short" : "A full-stack art auction web app.",
         "description" : "Bidder is a full-stack web application that simulates a live art auction and allows users to bid on artworks. Using Node.js and the MVC architectural pattern, this application is built to be user-friendly and scalable. I created the database schema and led the implementation of the PostgreSQL database. View the <a href='https://bidder-houston.herokuapp.com' target='_blank'>live demo here</a>.\nCreated as part of the 2018 DigitalCrafts Immersive Coding Bootcamp. Built with HTML, CSS, Bootstrap, JavaScript, jQuery, Git, Handlebars.js, Node.js, Express.js, PostgreSQL, Pg-Promise, Stripe API, and Socket.io.",
         "images" :
         [{
@@ -16,9 +15,8 @@
     },
     {
         "id" : 2,
-        "abbrev" : "Swipe",
         "title" : "d8",
-        "short" : "Front-end-first web app.",
+        "short" : "A front-end-first web app.",
         "description" : "d8 is a web application that receives user input via a quiz. It outputs restaurant and movie suggestions in the user's area. I worked as a designer as part of a four-person team. I created the visual design of the project, first prototyping the design using Adobe XD and then implementing the styles using HTML, CSS, Bootstrap, and JavaScript. Created as part of the 2018 DigitalCrafts Immersive Coding Bootcamp. Built with HTML, CSS, Bootstrap, JavaScript, jQuery, Adobe XD, Git, AJAX, Zomato API, TMDB API, and the Google Maps API.",
         "images" : 
             [{
@@ -42,9 +40,8 @@
     },
     {
         "id" : 3,
-        "abbrev" : "21",
         "title" : "Blackjack",
-        "short" : "A simple card game.",
+        "short" : "A simple jQuery card game.",
         "description" : "A simple Blackjack card game built with jQuery, Git, Bootstrap, JavaScript, HTML, and CSS. Try it out! Play the blackjack game <a href='http://www.erinthigpen.com/blackjack'>online here.</a>",
         "images" : 
             [{
@@ -56,9 +53,8 @@
     },
     {
         "id" : 4,
-        "abbrev" : "ATX",
         "title" : "ATX TV",
-        "short" : "Designs created for the ATX Television Festival.",
+        "short" : "Ads, posters, merch, and more created for the ATX Television Festival.",
         "description" : "The ATX Television Festival's fifth season (2016) embraced the theme of \"A Television Experience.\" With this as a starting point, I designed a series of promo materials and merch for the festival. This included a program guide, t-shirts and tote bags, and a full-page advertisement that appeared in <i>Entertainment Weekly</i>.\nFor the festival's fourth season (2015), \"As Close to Heaven as a Fan Can Get,\" I designed the festival poster and program guide cover after what I imagine would be a TV fan's favorite wall art.\nCreated using Adobe InDesign, Illustrator, and old-fashioned hand-drawing.",
         "images" :
             [{
@@ -80,9 +76,8 @@
     },
     {
         "id" : 7,
-        "abbrev" : "Birdie",
         "title" : "Blue Bird",
-        "short" : "Designs created for The Blue Bird Circle.",
+        "short" : "Artwork created for The Blue Bird Circle.",
         "description" : "A flyer and large-scale poster design for The Blue Bird Circle Resale Shop's annual Christmas fundraiser. Created using Adobe Illustrator.",
         "images" : 
             [{

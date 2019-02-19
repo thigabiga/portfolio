@@ -1,14 +1,14 @@
 {{#with myproject}}
 
 {{!-- HERO --}}
-<div class="row-fluid">
-    <h1>{{abbrev}}</h1>
+<div class="row green-hero">
+    <h1>{{title}}</h1>
 </div>
 
 {{!-- ABOUT --}}
 <div class="row-fluid d-flex justify-content-center">
     <div class="col space-around">
-        <h2>{{title}}</h2>
+        <h2>{{short}}</h2>
         <p>{{{description}}}</p>
         {{#if github}}
         <a href="{{github}}" target="blank" class="nav-bottom-hashtag">[ GitHub ]</a>

@@ -11,7 +11,6 @@ var gridItems = document.querySelectorAll("h6[data-id]");
     while (i < gridItems.length) {
         let temp = gridItems[i],
             tempID = temp.getAttribute("data-id");
-            console.log(tempID);
         
         temp.addEventListener("click", () => {
             redirectMe(temp);
@@ -21,7 +20,6 @@ var gridItems = document.querySelectorAll("h6[data-id]");
     };
     
     function redirectMe (temp) {
-        console.log(temp);
         let projectId = temp.getAttribute("data-id");
         window.location.href = "/project/" + projectId;
     };
