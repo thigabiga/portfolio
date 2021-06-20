@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,300i,400i,600i');
+
+body { 
+    padding-top: 50px;
+}
+
+a {
+    font-family: "Nunito", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Nunito", sans-serif;
+}
+
+p {
+    font-family: "Nunito", sans-serif;
+}
+
+.project-box {
+    max-width: 786px;
+}
+
+.footer-row {
+    background-color: gray;
+}
+
+.tiny-logo {
+    width: 18px;
+}

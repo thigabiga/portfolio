@@ -1,0 +1,36 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "ATX TV",
+            "description": "Posters, merchandise, and more created for the ATX Television Festival.",
+            "images": [
+                {
+                    "image": "under-construction.png",
+                    "alt" : "this page is under construction"
+                },
+                {
+                    "image": "under-construction.png",
+                    "alt" : "this page is under construction"
+                }
+            ],
+            "display": true
+        },
+        {
+            "id": 2,
+            "title": "Blue Bird Circle",
+            "description": "Posters created for The Blue Bird Circle Resale Shop.",
+            "images": [
+                {
+                    "image": "under-construction.png", 
+                    "alt" : "this page is under construction"
+                },
+                {
+                    "image": "under-construction.png",
+                    "alt" : "this page is under construction"
+                }
+            ],
+            "display": true
+        }
+    ]
+}
