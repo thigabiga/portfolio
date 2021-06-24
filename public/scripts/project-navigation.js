@@ -1,5 +1,5 @@
 // Navigate to project page from home page
-var gridItems = document.querySelectorAll("h3[data-id]");
+var gridItems = document.querySelectorAll("img[data-id]");
 
 (function toggleGrid() {
     "use strict";

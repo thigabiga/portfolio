@@ -1,18 +1,17 @@
 {{#with project}}
-
 <div class="row d-flex justify-content-center">
     <div class="col mx-4 project-box">
         <h2>{{title}}</h2>
         <p>{{description}}</p>
     </div>
 </div>
-
-    {{#each images}}
-    <div class="row d-flex justify-content-center">
-        <div class="col mx-4 my-3 project-box">
-            <img class="project-image img-fluid" src="../../images/{{image}}" />
-        </div>
-    </div>
-    {{/each}}
-
 {{/with}}
+
+{{#each images}}
+<div class="row d-flex justify-content-center">
+    <div class="col mx-4 my-3 project-box">
+        <img class="project-image img-fluid" src="{{imageURL}}" alt="{{altText}}" />
+    </div>
+</div>
+{{/each}}
+

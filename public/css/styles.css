@@ -8,12 +8,23 @@ a {
     font-family: "Nunito", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
     font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-weight: 300;
+}
+
+h4, h5, h6 {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-weight: 600;
 }
 
 p {
     font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: 400;
 }
 
 .project-box {
@@ -26,4 +37,16 @@ p {
 
 .tiny-logo {
     width: 18px;
+}
+
+.click-image {
+    cursor: pointer;
+}
+
+.nav-text {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 400;
+    text-transform: uppercase;
 }

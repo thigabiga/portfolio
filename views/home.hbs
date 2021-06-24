@@ -2,10 +2,9 @@
 <div class="container">
 
     <div class="row" id="workArtworkGrid">
-        {{#each projectInfo}}
-        <div class="col-md-6 col-lg-4">
-            <img src="../../images/{{image}}" class="img-fluid" alt="{{altText}}" />
-            <h3 class="pt-3" data-id="{{id}}">{{title}}</h3>
+        {{#each images}}
+        <div class="col-md-6 col-lg-4 my-3">
+            <img src="{{imageURL}}" class="img-fluid click-image" data-id="{{imageId}}" alt="{{altText}}" />
         </div>
         {{/each}}
     </div>

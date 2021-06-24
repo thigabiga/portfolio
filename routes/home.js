@@ -1,31 +1,80 @@
 const router = require("express").Router();
 const projectJson = require("../data/projects.json");
 
+// Import SDK
+var AWS = require('aws-sdk');
+
+// Environment variables
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+}
+var albumBucketName = process.env.BUCKET_NAME;
+var region = process.env.REGION;
+var identityPoolId = process.env.IDENTITY_POOL_ID;
+
+// Initialize the Amazon Cognito credentials provider
+AWS.config.region = region; // Region
+AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+    IdentityPoolId: identityPoolId,
+});
+
+// Create a new service object
+var s3 = new AWS.S3({
+    apiVersion: '2006-03-01',
+    params: {Bucket: albumBucketName}
+});
+
 router.get("/", (req, res) => {
 
     let projectInfo = [];
-    let image = "";
-    let altText = "";
 
-    // PROJECT INFO FOR MAIN GRID
-    projectJson.projects.forEach(project => {
-    
-    if (project["display"] === true) {
-        image = project["images"][0]["image"];
-        altText = project["images"][0]["alt"];
-
+    projectJson.projects.forEach(p => {
+        let images = p["images"];
         projectInfo = projectInfo.concat({
-            id : project["id"],
-            title : project["title"],
-            image : image,
-            altText : altText
+            id: p["id"],
+            image: images[0]["image"],
+            alt: images[0]["alt"],
+            pkey: "",
+            purl: "",
         });
-    };
-});
-  
-res.render("home", {
-    projectInfo : projectInfo,
     });
+
+    let projectImages = [];
+    let albumName = 'portfolio-images';
+    let albumPhotosKey = encodeURIComponent(albumName) + '/';
+
+    s3.listObjects({Prefix: albumPhotosKey}, function(err, data) {
+        var href = this.request.httpRequest.endpoint.href;
+        var bucketUrl = href + albumBucketName + '/';
+
+        var photos = data.Contents.map(function(photo) {
+            return {
+                pkey: photo.Key,
+                purl: bucketUrl + encodeURIComponent(photo.Key)
+            }
+        });
+
+        // Filter images files for the project ID provided
+        photos.forEach((e) => {
+            projectInfo.forEach((i) => {
+                if (e.pkey.split("/")[1] == i.image) {
+                    projectImages = projectImages.concat({
+                        imageURL: e.purl,
+                        altText: i.alt,
+                        imageId: i.id
+                    });
+                };
+            });
+        });
+
+        console.log(projectImages);
+
+        res.render("home", {
+            images: projectImages
+        });
+
+    });
+
 });
 
 module.exports = router;
