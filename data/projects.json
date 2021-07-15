@@ -2,8 +2,15 @@
     "projects": [
         {
             "id": 1,
-            "title": "ATX Television Festival Season 5",
+            "title": "A Television Experience",
             "description": "Print magazine advertisement and program guide created for ATX Television Festival Season 5.",
+            "categores": [
+                "design"
+            ],
+            "tech": [
+                "Adobe InDesign",
+                "Adobe Illustrator"
+            ],
             "images": [
                 {
                     "image": "IMG_5766.png",
@@ -22,8 +29,15 @@
         },
         {
             "id": 2,
-            "title": "ATX Television Festival Season 8",
+            "title": "TV Camp for Grown Ups",
             "description": "Program guide, interior program guide ad, and koozie created for ATX Television Festival Season 8.",
+            "categores": [
+                "design"
+            ],
+            "tech": [
+                "Adobe InDesign",
+                "Adobe Illustrator"
+            ],
             "images": [
                 {
                     "image": "IMG_5741.png",
@@ -44,6 +58,12 @@
             "id": 3,
             "title": "ATX Television Festival Season 4",
             "description": "TV-themed table tent drink menu created for ATX Television Festival Season 4.",
+            "categores": [
+                "design"
+            ],
+            "tech": [
+                "Adobe Illustrator"
+            ],
             "images": [
                 {
                     "image": "IMG_5793.png",
@@ -58,8 +78,14 @@
         },
         {
             "id": 4,
-            "title": "The Blue Bird Circle Resale Shop",
+            "title": "Christmas Market",
             "description": "Christmas event poster created for The Blue Bird Circle Resale Shop.",
+            "categores": [
+                "design"
+            ],
+            "tech": [
+                "Adobe Illustrator"
+            ],
             "images": [
                 {
                     "image": "IMG_5720.png", 

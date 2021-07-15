@@ -1,52 +1,136 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,300i,400i,600i');
-
-body { 
-    padding-top: 50px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
 a {
-    font-family: "Nunito", sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: "Nunito", sans-serif;
-    text-align: center;
-    font-weight: 300;
+h1 {
+    font-family: "Playfair Display", serif;
+    color: #252422;
 }
 
-h4, h5, h6 {
-    font-family: "Nunito", sans-serif;
+h2 {
+    font-family: "Playfair Display", serif;
+    color: #252422;
+}
+
+h3 {
+    font-family: "Playfair Display", serif;
+    color: #252422;
     text-align: center;
-    font-weight: 600;
+    padding-bottom: 20px;
+    font-size: 18pt;
+    font-weight: 700;
+}
+
+h5 {
+    font-family: "Lato", sans-serif;
+}
+
+h4, h5 {
+    font-family: "Playfair Display", serif;
+}
+
+h6 {
+    font-family: "Lato", sans-serif;
 }
 
 p {
-    font-family: "Nunito", sans-serif;
+    font-family: "Lato", sans-serif;
+    color: #252422;
     text-align: center;
-    font-size: 14pt;
-    font-weight: 400;
+    line-height: 1.8;
+    font-size: 11pt;
 }
 
-.project-box {
-    max-width: 786px;
-}
-
-.footer-row {
-    background-color: gray;
-}
-
-.tiny-logo {
-    width: 18px;
+.project-text-box {
+    margin-top: 30px;
+    max-width: 300px;
 }
 
 .click-image {
     cursor: pointer;
 }
 
-.nav-text {
-    font-family: "Nunito", sans-serif;
-    text-align: center;
+.nav-text, nav-text:visited {
+    color: #403d39;
+    font-family: "Lato", sans-serif;
     font-size: 10pt;
-    font-weight: 400;
     text-transform: uppercase;
+}
+
+.nav-text:hover {
+    color: #eb5e28;
+    text-decoration: none;
+}
+
+.nav-brand, nav-brand:visited {
+    color: #252422;
+    font-size: 20pt;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+}
+
+.nav-brand:hover {
+    color: #403d39;
+    text-decoration: none;
+}
+
+.header {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    max-width: 768px;
+    border-bottom: 1px solid #ccc5b9;
+}
+
+.extra-info {
+    font-family: "Lato", sans-serif;
+    font-size: 10pt;
+    color: #403d39;
+    text-align: left;
+}
+
+button.classic-btn {
+    color: white;
+    background-color: #eb5e28;
+    border-radius: 40px 40px 40px 40px;
+    padding: 10px 25px;
+    font-size: 10pt;
+}
+
+.btn-vert {
+    cursor: pointer; /* Pointer/hand icon */
+    display: block; /* Make the buttons appear below each other */
+}
+
+.btn-icon {
+    background-color: white;
+    border: none;
+}
+
+.icn {
+    margin: 10px;
+}
+
+.circle-icon {
+    color: white;
+    background-color: #eb5e28;
+    font-size: 10pt;
+    border: none;
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.6em;
+    margin: 10px;
+}
+
+.container-box {
+    max-width: 768px;
+}
+
+img.circle {
+    border-radius: 50%;
+    max-width: 250px;
 }

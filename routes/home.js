@@ -34,6 +34,7 @@ router.get("/", (req, res) => {
             id: p["id"],
             image: images[0]["image"],
             alt: images[0]["alt"],
+            title: p["title"],
             pkey: "",
             purl: "",
         });
@@ -61,13 +62,12 @@ router.get("/", (req, res) => {
                     projectImages = projectImages.concat({
                         imageURL: e.purl,
                         altText: i.alt,
-                        imageId: i.id
+                        imageId: i.id,
+                        title: i.title
                     });
                 };
             });
         });
-
-        console.log(projectImages);
 
         res.render("home", {
             images: projectImages
