@@ -4,8 +4,15 @@
     {{!-- WORK GRID --}}
     <div class="row" id="workArtworkGrid">
         {{#each images}}
-        <div class="col-sm-6 col-md-4 col-lg-4 my-3">
-            <img src="{{imageURL}}" class="img-fluid click-image" data-id="{{imageId}}" alt="{{altText}}" />
+        <div class="col-sm-6 col-md-4 col-lg-4 my-3" data-id="{{imageId}}">
+            <div class="service-wrapper">
+                <div><img src="{{imageURL}}" class="img-fluid" alt="{{altText}}" /></div>
+                <div class="service-wrapper-inner d-flex justify-content-center">
+                    <div class="d-flex align-self-center">{{title}}</div>
+                </div>
+            </div>
+                
+                    
         </div>
         {{/each}}
     </div>

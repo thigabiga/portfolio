@@ -37,7 +37,7 @@ h6 {
 
 p {
     font-family: "Lato", sans-serif;
-    color: #252422;
+    color: #403d39;
     text-align: center;
     line-height: 1.8;
     font-size: 11pt;
@@ -72,7 +72,7 @@ p {
 }
 
 .nav-brand:hover {
-    color: #403d39;
+    color: #eb5e28;
     text-decoration: none;
 }
 
@@ -92,6 +92,11 @@ p {
     text-align: left;
 }
 
+.extra-info:hover {
+    color: #eb5e28;
+    text-decoration: underline;
+}
+
 button.classic-btn {
     color: white;
     background-color: #eb5e28;
@@ -101,13 +106,13 @@ button.classic-btn {
 }
 
 .btn-vert {
-    cursor: pointer; /* Pointer/hand icon */
     display: block; /* Make the buttons appear below each other */
 }
 
 .btn-icon {
     background-color: white;
     border: none;
+    cursor: pointer; /* Pointer/hand icon */
 }
 
 .icn {
@@ -133,4 +138,36 @@ button.classic-btn {
 img.circle {
     border-radius: 50%;
     max-width: 250px;
+}
+
+.service-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.service-wrapper-inner {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    padding: 20px;
+    transition: 0.2s;
+    background: rgba(235, 94, 40, .8);
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 16pt;
+    text-align: center;
+    opacity: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.service-wrapper:hover .service-wrapper-inner {
+    top: 0;
+    background: rgba(235, 94, 40, .8);
+    opacity: 1;
+}
+
+.service-wrapper:hover > div > img {
+    opacity: .5;
 }
