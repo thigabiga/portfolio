@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
+/* Color Scheme
+#FFFCF2 Floral White
+#CCC5B9 Pale Silver
+#403D39 Black Olive
+#252422 Eerie Black
+#EB5E28 Flame */
+
 a {
     font-family: "Lato", sans-serif;
 }
@@ -92,17 +99,10 @@ p {
     text-align: left;
 }
 
-.extra-info:hover {
+.btn-icon:hover > span {
     color: #eb5e28;
     text-decoration: underline;
-}
-
-button.classic-btn {
-    color: white;
-    background-color: #eb5e28;
-    border-radius: 40px 40px 40px 40px;
-    padding: 10px 25px;
-    font-size: 10pt;
+    text-decoration-color: #eb5e28;
 }
 
 .btn-vert {
@@ -113,21 +113,11 @@ button.classic-btn {
     background-color: white;
     border: none;
     cursor: pointer; /* Pointer/hand icon */
+    color: #403d39;
+    text-decoration: none;
 }
 
 .icn {
-    margin: 10px;
-}
-
-.circle-icon {
-    color: white;
-    background-color: #eb5e28;
-    font-size: 10pt;
-    border: none;
-    display: inline-block;
-    border-radius: 60px;
-    box-shadow: 0px 0px 2px #888;
-    padding: 0.5em 0.6em;
     margin: 10px;
 }
 
@@ -152,7 +142,7 @@ img.circle {
     z-index: 1;
     padding: 20px;
     transition: 0.2s;
-    background: rgba(235, 94, 40, .8);
+    background: rgba(235, 94, 40, .75);
     color: white;
     font-family: "Lato", sans-serif;
     font-size: 16pt;
@@ -164,7 +154,7 @@ img.circle {
 
 .service-wrapper:hover .service-wrapper-inner {
     top: 0;
-    background: rgba(235, 94, 40, .8);
+    background: rgba(235, 94, 40, .75);
     opacity: 1;
 }
 
