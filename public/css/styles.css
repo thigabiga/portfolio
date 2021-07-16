@@ -161,3 +161,22 @@ img.circle {
 .service-wrapper:hover > div > img {
     opacity: .5;
 }
+
+footer {
+    width: 100%;
+    color: #CCC5B9;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 8pt;
+    padding: 10px;
+    background-color: white;
+}
+
+footer, .push {
+    height: 50px;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
