@@ -22,8 +22,9 @@ app.use(require(__dirname + "/routes/project"));
 app.use(require(__dirname + "/routes/about"));
 
 // port where app is served
-app.listen(3000, () => {
-    console.log('The web server has started on port 3000');
+const port = process.env.PORT
+app.listen(port, () => {
+    console.log('The web server has started');
 });
 
 app.get('/', (req, res) => {
