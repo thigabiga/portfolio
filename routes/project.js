@@ -4,10 +4,6 @@ const projects = require("../data/projects.json")["projects"];
 // Import SDK
 var AWS = require('aws-sdk');
 
-// Environment variables
-if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config();
-}
 var albumBucketName = process.env.BUCKET_NAME;
 var region = process.env.REGION;
 var identityPoolId = process.env.IDENTITY_POOL_ID;

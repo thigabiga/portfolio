@@ -21,10 +21,6 @@ app.use(require(__dirname + "/routes/home"));
 app.use(require(__dirname + "/routes/project"));
 app.use(require(__dirname + "/routes/about"));
 
-// Environment variables
-if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config();
-}
 // port where app is served
 const port = process.env.PORT
 app.listen(port, () => {
