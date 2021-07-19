@@ -22,6 +22,7 @@ app.use(require(__dirname + "/routes/project"));
 app.use(require(__dirname + "/routes/about"));
 
 // port where app is served
+require('dotenv').config();
 const port = process.env.PORT
 app.listen(port, () => {
     console.log('The web server has started on port: ' + port);

@@ -4,6 +4,7 @@ const projectJson = require("../data/projects.json");
 // Import SDK
 var AWS = require('aws-sdk');
 
+require('dotenv').config();
 var albumBucketName = process.env.BUCKET_NAME;
 var region = process.env.REGION;
 var identityPoolId = process.env.IDENTITY_POOL_ID;
