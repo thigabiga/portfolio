@@ -93,6 +93,24 @@
                 }
             ],
             "display": true
+        },
+        {
+            "id": 5,
+            "title": "Making a Difference Together",
+            "description": "Logo design created for the 2021 NOV Campaign for the United Way of Greater Houston.",
+            "categores": [
+                "design"
+            ],
+            "tech": [
+                "Adobe Illustrator"
+            ],
+            "images": [
+                {
+                    "image": "IMG_6142.png", 
+                    "alt" : "Thermos with Making a Difference Together logo"
+                }
+            ],
+            "display": true
         }
     ]
 }
