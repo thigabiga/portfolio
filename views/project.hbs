@@ -5,6 +5,7 @@
         <div class="col project-text-box">
             <h3>{{title}}</h3>
             <p>{{description}}</p>
+            <h6>Made with {{tech}}</h6>
         </div>
     </div>
     {{/with}}
@@ -13,6 +14,9 @@
     <div class="row d-flex justify-content-center">
         <div class="col mx-4 my-3 project-box">
             <img class="project-image img-fluid" src="{{imageURL}}" alt="{{altText}}" />
+            <p class="caption">
+                {{caption}}
+            </p>
         </div>
     </div>
     {{/each}}

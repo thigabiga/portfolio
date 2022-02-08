@@ -27,7 +27,7 @@ router.get("/about", (req, res) => {
 
     let albumName = 'portfolio-images';
     let albumPhotosKey = encodeURIComponent(albumName) + '/';
-    let photoName = 'IMG_7069.JPG';
+    let photoName = 'E37ADF85-0C90-4867-9556-62E32F323FF8.png';
 
     s3.listObjects({Prefix: albumPhotosKey}, function(err, data) {
         var href = this.request.httpRequest.endpoint.href;

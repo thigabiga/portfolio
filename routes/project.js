@@ -54,7 +54,8 @@ router.get("/project/:id", (req, res) => {
                 if (e.pkey.split("/")[1] == i.image) {
                     projectImages = projectImages.concat({
                         imageURL: e.purl,
-                        altText: i.alt
+                        altText: i.alt,
+                        caption: i.caption
                     });
                 };
             });
