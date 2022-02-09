@@ -55,7 +55,7 @@ router.get("/project/:id", (req, res) => {
                     projectImages = projectImages.concat({
                         imageURL: e.purl,
                         altText: i.alt,
-                        caption: i.caption
+                        caption: i.caption,
                     });
                 };
             });

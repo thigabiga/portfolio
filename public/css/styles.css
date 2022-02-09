@@ -160,8 +160,9 @@ img.circle {
     background: rgba(235, 94, 40, .75);
     color: white;
     font-family: "Lato", sans-serif;
-    font-size: 14pt;
-    font-weight: 300;
+    font-size: 10pt;
+    font-weight: 400;
+    text-transform: uppercase;
     text-align: center;
     opacity: 0;
     top: 0;
