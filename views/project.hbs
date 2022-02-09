@@ -5,6 +5,13 @@
         <div class="col project-text-box">
             <h3>{{title}}</h3>
             <p>{{description}}</p>
+            <h6>Made with<br />{{tech}}</h6>
+            {{#if githubUrl}}
+            <a href="{{githubUrl}}" class="btn-icon d-flex align-items-center justify-content-center" role="button">
+                <span class="material-icons icn">code</span>
+                <span class="extra-info">Github Repo</span>
+            </a>
+            {{/if}}
         </div>
     </div>
     {{/with}}
@@ -13,6 +20,9 @@
     <div class="row d-flex justify-content-center">
         <div class="col mx-4 my-3 project-box">
             <img class="project-image img-fluid" src="{{imageURL}}" alt="{{altText}}" />
+            <p class="caption">
+                {{caption}}
+            </p>
         </div>
     </div>
     {{/each}}

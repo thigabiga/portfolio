@@ -3,26 +3,26 @@
         {
             "id": 1,
             "title": "A Television Experience",
-            "description": "Print magazine advertisement and program guide created for ATX Television Festival Season 5.",
+            "description": "Designs created for ATX Television Festival Season 5: A Television Experience.",
             "categores": [
                 "design"
             ],
-            "tech": [
-                "Adobe InDesign",
-                "Adobe Illustrator"
-            ],
+            "tech": "Adobe InDesign / Illustrator",
             "images": [
                 {
-                    "image": "IMG_5766.png",
-                    "alt" : "ATX TV Season 5 Festival Guide (Back)"
+                    "image": "DF4D1A9A-D5E8-4C53-AFD5-C1D125267DB4_1_105_c.jpg",
+                    "alt" : "ATX TV Season 5 Festival Guide (Back)",
+                    "caption": "Festival program guide (back cover). Circular logo and original background image provided by ATX Television Festival."
                 },
                 {
-                    "image": "IMG_5772.png",
-                    "alt" : "ATX TV Season 5 Festival Guide (Front)"
+                    "image": "IMG_8717.jpg",
+                    "alt" : "ATX TV Season 5 Festival Guide (Front)",
+                    "caption": "Festival program guide (front cover)."
                 },
                 {
-                    "image": "IMG_5725.png",
-                    "alt" : "ATX TV Season 5 Entertainment Weekly Ad"
+                    "image": "IMG_8910.jpg",
+                    "alt" : "ATX TV Season 5 Entertainment Weekly Ad",
+                    "caption": "Full-page magazine advertisement printed in Entertainment Weekly Magazine."
                 }
             ],
             "display": true
@@ -30,26 +30,26 @@
         {
             "id": 2,
             "title": "TV Camp for Grown Ups",
-            "description": "Program guide, interior program guide ad, and koozie created for ATX Television Festival Season 8.",
+            "description": "Festival program guide and koozie designed for ATX Television Festival Season 8: TV Camp for Grown Ups.",
             "categores": [
                 "design"
             ],
-            "tech": [
-                "Adobe InDesign",
-                "Adobe Illustrator"
-            ],
+            "tech": "Adobe InDesign / Illustrator",
             "images": [
                 {
-                    "image": "IMG_5741.png",
-                    "alt" : "ATX TV Season 8 Festival Guide (Front)"
+                    "image": "C0D82901-7942-42DE-BB9A-509F86C4FF85_1_105_c.jpg",
+                    "alt" : "ATX TV Season 8 Festival Guide (Front)",
+                    "caption": "Festival program guide (front cover)."
                 },
                 {
-                    "image": "IMG_5761.png",
-                    "alt" : "ATX TV Season 8 Festival Guide (Interior Ad)"
+                    "image": "IMG_8917.jpg",
+                    "alt" : "ATX TV Season 8 Festival Guide (Interior Ad)",
+                    "caption": "Interior program guide advertisement."
                 },
                 {
-                    "image": "IMG_5809.png",
-                    "alt" : "ATX TV Season 8 Koozie"
+                    "image": "E0DFFE1E-A415-4CB8-9262-8EDAF0A3BC54_1_105_c.jpg",
+                    "alt" : "ATX TV Season 8 Koozie",
+                    "caption": "Festival koozie (back)."
                 }
             ],
             "display": true
@@ -57,39 +57,38 @@
         {
             "id": 3,
             "title": "ATX Television Festival Season 4",
-            "description": "TV-themed table tent drink menu created for ATX Television Festival Season 4.",
+            "description": "Drink menu table tent designed for ATX Television Festival Season 4.",
             "categores": [
                 "design"
             ],
-            "tech": [
-                "Adobe Illustrator"
-            ],
+            "tech": "Adobe Illustrator",
             "images": [
                 {
-                    "image": "IMG_5793.png",
-                    "alt" : "ATX TV Season 4 Drink Menu Table Tent (Front)"
+                    "image": "EEC303EE-E120-4F8B-BD6A-00F27358AF19_1_105_c.jpg",
+                    "alt" : "ATX TV Season 4 Drink Menu Table Tent (Front)",
+                    "caption": "Drink menu table tent (front). Logos provided by ATX Television Festival."
                 },
                 {
-                    "image": "IMG_5798.png",
-                    "alt" : "ATX TV Season 4 Drink Menu Table Tent (Back)"
+                    "image": "68744DDC-DE02-4A14-8E07-B9ADBB9D4FE4_1_105_c.jpg",
+                    "alt" : "ATX TV Season 4 Drink Menu Table Tent (Back)",
+                    "caption": "Drink menu table tent (back)."
                 }
             ],
             "display": true
         },
         {
             "id": 4,
-            "title": "Christmas Market",
-            "description": "Christmas event poster created for The Blue Bird Circle Resale Shop.",
+            "title": "The Blue Bird Circle",
+            "description": "Poster designed for The Blue Bird Circle Resale Shop.",
             "categores": [
                 "design"
             ],
-            "tech": [
-                "Adobe Illustrator"
-            ],
+            "tech": "Adobe Illustrator",
             "images": [
                 {
-                    "image": "IMG_5720.png", 
-                    "alt" : "The Blue Bird Circle Christmas Poster"
+                    "image": "C4BEEBF0-4A68-41EA-A8FC-9C7666035215_1_105_c.jpg", 
+                    "alt" : "The Blue Bird Circle Christmas Poster",
+                    "caption" : "Christmas event poster created for The Blue Bird Circle Resale Shop."
                 }
             ],
             "display": true
@@ -97,17 +96,45 @@
         {
             "id": 5,
             "title": "Making a Difference Together",
-            "description": "Logo design created for the 2021 NOV Campaign for the United Way of Greater Houston.",
+            "description": "Logo designed for the 2021 NOV Campaign for the United Way of Greater Houston.",
             "categores": [
                 "design"
             ],
-            "tech": [
-                "Adobe Illustrator"
-            ],
+            "tech": "Adobe Illustrator",
             "images": [
                 {
-                    "image": "IMG_6142.png", 
-                    "alt" : "Thermos with Making a Difference Together logo"
+                    "image": "IMG_8672.jpg", 
+                    "alt" : "Thermos with Making a Difference Together logo",
+                    "caption" : "Campaign logo."
+                }
+            ],
+            "display": true
+        },
+        {
+            "id": 6,
+            "title": "Wes Anderson Bingo",
+            "description": "A few digital illustrations designed for a Wes Anderson-themed bingo web app (work in progress).",
+            "categores": [
+                "design",
+                "web"
+            ],
+            "githubUrl": "https://github.com/thigabiga/rushmore-bingo",
+            "tech": "Adobe Illustrator / React / JavaScript / Node",
+            "images": [
+                {
+                    "image": "sketch_tape.jpg", 
+                    "alt" : "Retro tape player digital illustration",
+                    "caption" : "Retro tape player."
+                },
+                {
+                    "image": "sketch_pjs.jpg", 
+                    "alt" : "Pajama set digital illustration",
+                    "caption" : "Pajama set."
+                },
+                {
+                    "image": "sketch_typewriter.jpg", 
+                    "alt" : "Retro typewriter digital illustration",
+                    "caption" : "Retro typewriter."
                 }
             ],
             "display": true
